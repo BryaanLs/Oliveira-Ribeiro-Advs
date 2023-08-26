@@ -44,8 +44,6 @@
 
 .menuNavigation {
   margin-top: 3rem;
-}
-.menuNavigation ul {
   display: flex;
   justify-content: center;
   align-items: end;
@@ -61,7 +59,8 @@
   position: relative;
 }
 
-.menuNavigation a::after {
+.menuNavigation a::after,
+a.active::after {
   content: "";
   width: 3px;
   height: 0;
@@ -79,8 +78,18 @@
   top: 8px;
 }
 
+a.active {
+  transition: all 0.5s ease-in-out;
+  color: var(--corSecundariaSegundoTom);
+}
+a.active::after {
+  opacity: 1;
+  height: 70%;
+  top: 8px;
+}
+
 @media (max-width: 1070px) {
-  .menuNavigation ul {
+  .menuNavigation {
     flex-direction: column;
     align-items: center;
     padding: 1rem;

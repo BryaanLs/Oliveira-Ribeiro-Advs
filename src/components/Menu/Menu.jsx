@@ -1,6 +1,6 @@
 import React from "react";
 import "./Menu.css";
-
+import { NavLink } from "react-router-dom";
 // eslint-disable-next-line react/prop-types
 const Menu = ({ classMenu }) => {
   return (
@@ -18,21 +18,12 @@ const Menu = ({ classMenu }) => {
         </div>
 
         <nav className="menuNavigation">
-          <ul>
-            <li>
-              <a href="#">Página Inicial</a>
-            </li>
-            <li>
-              <a href="#">Áreas de Atuação</a>
-            </li>
-            <li>
-              <a href="#">Nosso Escritório</a>
-            </li>
-            <li>
-              <a href="#">Sócios</a>
-            </li>
-          </ul>
+          <NavLink to="/" end>Página Inicial</NavLink>
+          <NavLink to="Áreas-de-atuação">Áreas de Atuação</NavLink>
+          <NavLink to="Nosso-Escritório">Nosso Escritório</NavLink>
+          <NavLink to="Sócios">Sócios</NavLink>
         </nav>
+        
         <div className="funcionamento">
           <p>Seg a Sex - 9h às 18h | (11) 99999-9999</p>
           <a href="#">entre em contato</a>

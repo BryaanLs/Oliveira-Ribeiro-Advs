@@ -2,6 +2,7 @@
 import React from "react";
 import "./Header.css";
 import Menu from "../Menu/Menu";
+import ButtonMenuMobile from "../Menu/ButtonMenuMobile";
 
 const Header = () => {
   const [menuAberto, setMenuAberto] = React.useState(true);
@@ -16,10 +17,10 @@ const Header = () => {
 
   return (
     <>
-      <button className="btnMenu" onClick={handleClickMenu}>
-        {menuAberto ? "☰" : "X"}
-      </button>
-
+      <ButtonMenuMobile
+        menuAberto={menuAberto}
+        handleClickMenu={handleClickMenu}
+      />
       <Menu classMenu={classMenu} />
     </>
   );
