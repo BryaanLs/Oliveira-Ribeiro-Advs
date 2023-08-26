@@ -1,0 +1,130 @@
+.menu,
+.menuMobile {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--corPrimaria);
+  height: max-content;
+  padding: 1rem 3rem;
+}
+
+.logoMenu {
+  display: flex;
+  align-items: center;
+}
+
+.menu .main-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.funcionamento {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.funcionamento p {
+  color: #fff;
+  font-family: var(--fonteTitulo);
+  padding-bottom: 1rem;
+}
+
+.funcionamento a {
+  font-family: var(--fonteTitulo);
+  display: block;
+  padding: 1rem 3rem;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: var(--corSecundariaSegundoTom);
+  border-radius: var(--borderRadius);
+}
+
+.menuNavigation {
+  margin-top: 3rem;
+}
+.menuNavigation ul {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  height: 100%;
+}
+
+.menuNavigation a {
+  color: #fff;
+  font-family: var(--fonteTitulo);
+  display: block;
+  padding: 1.5rem;
+  font-size: 1.8rem;
+  position: relative;
+}
+
+.menuNavigation a::after {
+  content: "";
+  width: 3px;
+  height: 0;
+  background-color: var(--corSecundariaSegundoTom);
+  position: absolute;
+  left: 5px;
+  top: 15px;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+}
+
+.menuNavigation a:hover::after {
+  height: 70%;
+  opacity: 1;
+  top: 8px;
+}
+
+@media (max-width: 1070px) {
+  .menuNavigation ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .logoMenu {
+    position: relative;
+    margin-left: 2rem;
+  }
+
+  .logoMenu::after {
+    content: "";
+    position: absolute;
+    left: -55%;
+    bottom: -10px;
+    width: 200%;
+    height: 1px;
+    background-color: var(--corSecundariaSegundoTom);
+  }
+
+  .menu .main-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu {
+    height: 0;
+    opacity: 0;
+    top: -100%;
+    transition: all 0.5s ease;
+  }
+
+  .menuMobile {
+    height: max-content;
+    opacity: 1;
+    top: 0;
+  }
+
+  .funcionamento {
+    padding: 2rem 0;
+    align-items: center;
+  }
+
+  .funcionamento p {
+    padding-bottom: 2rem;
+  }
+}
