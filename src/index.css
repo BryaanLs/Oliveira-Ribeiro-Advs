@@ -13,6 +13,13 @@
   --borderRadius: 10px;
 }
 
+#root{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: max-content;
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -67,17 +74,17 @@ p,a,li,span{
 .container{
   padding: var(--paddingSection);
   height: max-content;
-  width: 100%;
-}
-
-body{
-  padding-top: 13rem;
+  min-width: 100%;
+  margin-top: 13rem;
 }
 
 @media (max-width: 1070px){
-  body {
-    padding-top: 0;
+  .container{
+    margin-top: 0;
   }
 }
 
 
+::selection{
+  background-color: var(--corSecundaria);
+}

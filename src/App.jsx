@@ -2,16 +2,18 @@
 import React from "react";
 import Header from "./components/Header/Header.jsx";
 import Home from "./Pages/Home/Home.jsx";
+import AreasDeAtuacao from "./Pages/AreasDeAtuacao/AreasDeAtuacao.jsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 const App = () => {
   return (
     <>
-    <BrowserRouter>
-      <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-      </Routes>
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="Áreas-de-atuação" element={<AreasDeAtuacao />} />
+        </Routes>
       </BrowserRouter>
     </>
   );

@@ -7,6 +7,7 @@
   background-color: var(--corPrimaria);
   height: max-content;
   padding: 1rem 3rem;
+  z-index: 999;
 }
 
 .logoMenu {
@@ -119,7 +120,7 @@ a.active::after {
     height: 0;
     opacity: 0;
     top: -100%;
-    transition: all 0.5s ease;
+    transition: all 0.6s ease-out;
   }
 
   .menuMobile {
