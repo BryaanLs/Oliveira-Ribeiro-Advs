@@ -9,7 +9,6 @@ const JobDescription = ({
   mainClass,
   imgSrc,
   imgAlt,
-  reverse,
   children,
 }) => {
   return (
@@ -23,7 +22,7 @@ const JobDescription = ({
           ))}
           {children}
         </div>
-        <img src={imgSrc} alt={imgAlt} />
+        <img src={imgSrc} alt={imgAlt} loading="lazy" />
       </div>
     </>
   );

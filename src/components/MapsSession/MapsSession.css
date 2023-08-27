@@ -1,0 +1,93 @@
+.bgMaps {
+  background-image: url(/src/assets/img/bgMaps.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  color: #fff;
+}
+
+.maps-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5rem 0;
+}
+
+.maps-text h2 {
+  font-size: 3rem;
+  position: relative;
+  top: -50px;
+}
+
+.maps-text li {
+  display: flex;
+  padding: 0.5rem 0;
+}
+
+.maps-text li span {
+  color: var(--cinzaLetras);
+  font-weight: bold;
+  top: 0;
+  margin-right: 1rem;
+}
+
+.maps-text p,
+.maps-text a {
+  font-size: 1.7rem;
+  margin-left: 2rem;
+  color: #fff;
+  font-family: var(--fonteTitulo);
+}
+
+.maps-text a {
+  margin: 0;
+  text-decoration: underline;
+}
+
+.maps-text span {
+  color: #fff;
+  position: relative;
+  bottom: -50px;
+}
+
+.maps iframe {
+  border-radius: 40px !important;
+  width: 500px;
+  height: 300px;
+}
+
+@media (max-width: 1070px) {
+  .maps-content {
+    flex-direction: column;
+  }
+  .maps-text h2 {
+    margin-top: 2rem;
+    text-align: center;
+  }
+  .maps-text li span {
+    font-size: 1.3rem;
+  }
+  .maps-content li p {
+    margin: 0;
+  }
+  .maps-content li {
+    flex-direction: column;
+    padding: 1.5rem 0;
+  }
+
+  .maps-content li img {
+    margin: 1rem 0 0 0;
+  }
+
+  .maps-content li {
+    border-bottom: 2px solid var(--corSecundaria);
+  }
+
+  .maps {
+    width: 100%;
+  }
+  .maps iframe {
+    margin-top: 3rem;
+    width: 100%;
+  }
+}
