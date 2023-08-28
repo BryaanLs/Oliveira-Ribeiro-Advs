@@ -3,3 +3,50 @@
   margin: 0;
 }
 
+.whiteSession {
+  display: flex;
+  gap: 5rem;
+}
+
+.whiteSession p {
+  padding-left: 20%;
+  font-weight: bold;
+  color: var(--cinzaLetras);
+}
+
+.whiteSession h2 {
+  color: var(--corPrimariaSegundoTom);
+}
+
+.aboutMe {
+  display: flex;
+  align-items: center;
+  gap: 6rem;
+}
+
+.aboutMe p {
+  padding: 4rem 0;
+  font-size: 1.8rem;
+  color: var(--cinzaLetras);
+  font-family: var(--fonteParagrafo);
+}
+
+@media (max-width: 1070px) {
+  .whiteSession {
+    flex-direction: column;
+    text-align: center;
+    padding: 5rem 0;
+  }
+
+  .whiteSession p {
+    padding: 0;
+  }
+
+  .aboutMe {
+    flex-direction: column;
+  }
+
+  .aboutMe img {
+    width: 100%;
+  }
+}

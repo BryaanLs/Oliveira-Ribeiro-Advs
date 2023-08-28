@@ -2,7 +2,7 @@
 .reverse {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 20rem;
   color: var(--corPrimaria);
 }
 .jobDescription span {
@@ -31,8 +31,6 @@
 
 .bgCinza {
   background-color: var(--cinzaBg);
-  /* border-bottom: 4px solid var(--corPrimaria); */
-  /* border-top: 4px solid var(--corPrimaria); */
   box-shadow: 0 0 1px #0f1f2fc4;
 }
 
@@ -40,6 +38,15 @@
   flex-direction: row-reverse;
   padding: 10rem 0;
 }
+
+/* .reverse span,
+.reverse h2,
+.reverse p,
+.jobDescription span,
+.jobDescription h2,
+.jobDescription p {
+  padding-left: 5rem;
+} */
 
 .reverse span,
 .reverse h2,
@@ -54,6 +61,11 @@
 .reverse h2,
 .jobDescription h2 {
   padding: 1rem 0;
+}
+
+.jobDescription img,
+.reverse img {
+  width: 350px;
 }
 
 @media (max-width: 1070px) {

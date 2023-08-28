@@ -1,0 +1,14 @@
+.bgHero {
+  animation: areasDeAtuacao 1s ease-in-out forwards;
+}
+
+@keyframes areasDeAtuacao {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

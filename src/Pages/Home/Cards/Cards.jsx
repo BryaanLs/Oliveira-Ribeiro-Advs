@@ -3,8 +3,10 @@ import "./Cards.css";
 import livroSVG from "/src/assets/img/livro.svg";
 import marteloSVG from "/src/assets/img/martelinho.svg";
 import pessoaSVG from "/src/assets/img/pessoaEPapel.svg";
+import BoxAnimation from "../../../components/BoxAnimation/BoxAnimation";
 
-const Cards = () => {
+// eslint-disable-next-line react/prop-types
+const Cards = ({ animationText }) => {
   return (
     <>
       <div className="cards main-content">
@@ -27,11 +29,18 @@ const Cards = () => {
         </div>
       </div>
       <div className="cards-description main-content">
-        <h2>Confira as áreas de atuação do nosso escritório</h2>
-        <p>
-          10 anos de atuação no ramo de Direito da Família. Advogado
-          especializado em inventário.
-        </p>
+
+        <BoxAnimation animacao={animationText}>
+          <h2>Confira as áreas de atuação do nosso escritório</h2>
+        </BoxAnimation>
+
+        <BoxAnimation animacao={animationText}>
+          <p>
+            10 anos de atuação no ramo de Direito da Família. Advogado
+            especializado em inventário.
+          </p>
+        </BoxAnimation>
+        
       </div>
     </>
   );

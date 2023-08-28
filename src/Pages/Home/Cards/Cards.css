@@ -80,12 +80,25 @@
   font-size: 2.3rem;
 }
 
+.card {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s, transform 0.5s;
+  animation: card-animation 1s ease-in-out forwards;
+}
+@keyframes card-animation {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @media (max-width: 1400px) {
   .cards {
     top: -180px;
   }
 
-  .card p{
+  .card p {
     font-size: 1.6rem;
   }
 

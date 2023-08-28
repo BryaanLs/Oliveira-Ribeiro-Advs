@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import React from "react";
 import "./JobDescription.css";
+import BoxAnimation from "../BoxAnimation/BoxAnimation";
 
 const JobDescription = ({
   span,
@@ -10,19 +11,25 @@ const JobDescription = ({
   imgSrc,
   imgAlt,
   children,
+  animationText,
+  animationImg,
 }) => {
   return (
     <>
       <div className={`${mainClass} main-content`}>
         <div className="textContent">
-          <span>{span}</span>
-          <h2>{title}</h2>
-          {paragraphs.map((paragraph, index) => (
-            <p key={index}>{paragraph}</p>
-          ))}
-          {children}
+          <BoxAnimation animacao={animationText}>
+            <span>{span}</span>
+            <h2>{title}</h2>
+            {paragraphs.map((paragraph, index) => (
+              <p key={index}>{paragraph}</p>
+            ))}
+            {children}
+          </BoxAnimation>
         </div>
-        <img src={imgSrc} alt={imgAlt} loading="lazy" />
+        <BoxAnimation animacao={animationImg}>
+          <img src={imgSrc} alt={imgAlt} loading="lazy" />
+        </BoxAnimation>
       </div>
     </>
   );

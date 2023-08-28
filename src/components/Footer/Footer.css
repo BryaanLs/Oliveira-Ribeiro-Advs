@@ -1,0 +1,110 @@
+footer.container {
+  margin: 0;
+  /* border-top: 2px solid var(--corSecundaria); */
+  /* box-shadow: 0 -2px 5px var(--corSecundaria); */
+  padding: 5rem 3rem;
+}
+
+.nav {
+  display: flex;
+  gap: 30rem;
+}
+
+.nav-navlink {
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+  position: relative;
+}
+
+.nav-navlink ul li a {
+  padding: 0.5rem 0;
+  display: block;
+  color: var(--corPrimariaSegundoTom);
+}
+
+.nav-navlink ul li a:not(.active) {
+  text-decoration: underline;
+}
+
+.nav h3 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  position: relative;
+  right: 13px;
+  font-family: var(--fonteParagrafo);
+  color: var(--corPrimariaSegundoTom);
+}
+
+.nav-navlink .active {
+  color: var(--corPrimariaSegundoTom);
+  font-weight: bold;
+  position: relative;
+  width: 100%;
+  font-size: 1.8rem;
+}
+
+.nav-navlink a:nth-child(1):not(.active)::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--corSecundaria);
+  position: absolute;
+  left: -15px;
+  margin-top: 7px;
+}
+.nav-navlink .active::after {
+  text-decoration: none;
+  content: "(Ir ao topo)";
+  font-size: 1.3rem;
+  background-color: transparent;
+  font-weight: normal;
+  position: inherit;
+  top: 0;
+  left: 15px;
+  width: max-content;
+  height: max-content;
+}
+
+.nav-navlink .active::before {
+  content: "";
+  width: 5px;
+  height: 60%;
+  border-radius: 20%;
+  background-color: var(--corSecundaria);
+  position: absolute;
+  left: -13px;
+  top: 19%;
+}
+
+.nav-navlink .contactButton {
+  position: relative;
+  left: -20px;
+  top: 20px;
+}
+
+.footerDescription {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: end;
+}
+
+.footerDescription h3,
+.footerDescription p {
+  font-size: 1.2rem;
+  left: 0;
+}
+
+@media (max-width: 1070px) {
+  .nav {
+    flex-direction: column;
+    gap: 4rem;
+    align-items: center;
+  }
+
+  .footerDescription {
+    align-items: center;
+  }
+}
