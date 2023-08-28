@@ -39,15 +39,6 @@
   padding: 10rem 0;
 }
 
-/* .reverse span,
-.reverse h2,
-.reverse p,
-.jobDescription span,
-.jobDescription h2,
-.jobDescription p {
-  padding-left: 5rem;
-} */
-
 .reverse span,
 .reverse h2,
 .reverse p {
@@ -98,5 +89,7 @@
   .jobDescription,
   .reverse {
     flex-direction: column;
+    gap: 0;
+    padding-bottom: 5rem;
   }
 }

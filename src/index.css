@@ -20,6 +20,7 @@
   padding: 0;
   width: 100%;
   min-height: max-content;
+  overflow-x: hidden !important;
 }
 
 * {
@@ -33,7 +34,6 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
 button {
