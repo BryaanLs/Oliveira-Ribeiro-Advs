@@ -9,7 +9,7 @@ const Menu = () => {
         <div>
           <a href="#" className="logoMenu">
             <img
-              src="src\assets\img\Logo-OliveiraAdvs.svg"
+              src="/src/assets/img/Logo-ROADVS.webp"
               alt="logo"
               width={110}
               height={110}
