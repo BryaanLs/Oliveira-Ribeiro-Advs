@@ -16,6 +16,7 @@ import {
   fromBottomVariant,
   fromBottomWithBlurVariant,
 } from "/src/components/Animations.js";
+import Container from "../../components/Container/Container";
 
 const jobDescriptionUm = [
   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod necessitatibus commodi quia ex. Quae illum quibusdam voluptate ducimus quaerat consequatur sunt est suscipit, aspernatur tempore rerum qui, cum error dolorem!",
@@ -25,15 +26,15 @@ const jobDescriptionUm = [
 const Home = () => {
   return (
     <>
-      <section className="container home">
+      <Container containerBg="home">
         <Carrossel />
-      </section>
+      </Container>
 
-      <section className="container bgSecondSession">
+      <Container containerBg="bgSecondSession">
         <Cards animationText={fromBottomWithBlurVariant} />
-      </section>
+      </Container>
 
-      <section className="container">
+      <Container>
         <JobDescription
           animationText={fromLeftVariant}
           animationImg={fromRightVariant}
@@ -44,9 +45,9 @@ const Home = () => {
           imgSrc={imgUm}
           imgAlt="img teste"
         ></JobDescription>
-      </section>
+      </Container>
 
-      <section className="container bgCinza">
+      <Container containerBg="bgCinza">
         <JobDescription
           animationText={fromRightVariant}
           animationImg={fromLeftVariant}
@@ -57,9 +58,9 @@ const Home = () => {
           imgSrc={imgUm}
           imgAlt="img teste"
         ></JobDescription>
-      </section>
+      </Container>
 
-      <section className="container">
+      <Container>
         <JobDescription
           animationText={fromLeftVariant}
           animationImg={fromRightVariant}
@@ -77,13 +78,13 @@ const Home = () => {
             target="_blank"
           />
         </JobDescription>
-      </section>
+      </Container>
 
-      <section className="container bgMaps">
+      <Container containerBg="bgMaps">
         <BoxAnimation animacao={fromBottomWithBlurVariant}>
           <MapsSession />
         </BoxAnimation>
-      </section>
+      </Container>
 
       <section className="container">
         <div className="main-content whiteSession">
@@ -100,7 +101,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="container bgMaps">
+      <Container containerBg="bgMaps">
         <div className="aboutMe main-content">
           <BoxAnimation animacao={fromLeftVariant}>
             <div className="aboutMe-text">
@@ -115,7 +116,7 @@ const Home = () => {
             <img src={imgDois} alt="" />
           </BoxAnimation>
         </div>
-      </section>
+      </Container>
     </>
   );
 };

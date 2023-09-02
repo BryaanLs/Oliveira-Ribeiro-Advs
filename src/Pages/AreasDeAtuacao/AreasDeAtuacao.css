@@ -1,14 +1,61 @@
-.bgHero {
-  animation: areasDeAtuacao 1s ease-in-out forwards;
+.bgHeroAtuacao {
+  background: url(/src/assets/img/hero-atuacao.webp);
+  min-height: 50vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  display: flex;
+}
+
+.bgHeroAtuacao .main-content {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  animation: areasDeAtuacao 0.8s ease-in-out;
+}
+
+.bgHeroAtuacao h1 {
+  color: #fff;
+}
+
+.bgFinalAtuacao {
+  background: url(/src/assets/img/bgFinalAtuacao.webp);
+}
+
+.bgFinalAtuacao .main-content {
+  display: flex;
+  align-items: center;
+  padding: 8rem 0;
+  gap: 5rem;
+}
+
+.bgFinalAtuacao h2 {
+  color: #fff;
+}
+
+.bgFinalAtuacao p {
+  color: var(--cinzaLetras);
+  font-weight: bold;
+  font-size: 2rem;
+  min-width: 50%;
+  max-width: 50%;
 }
 
 @keyframes areasDeAtuacao {
   from {
     opacity: 0;
-    transform: translateY(50px);
+    transform: translateY(-100px);
   }
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@media (max-width: 1070px) {
+  .bgFinalAtuacao {
+    flex-direction: column;
   }
 }

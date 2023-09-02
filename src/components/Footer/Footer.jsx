@@ -4,6 +4,9 @@ import ContatcButton from "../ContactButton/ContatcButton";
 import "./Footer.css";
 
 const Footer = () => {
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
   return (
     <footer className="container">
       <div className="nav main-content">
@@ -11,18 +14,24 @@ const Footer = () => {
           <h3>Navegação</h3>
           <ul>
             <li>
-              <NavLink to="/" end>
+              <NavLink to="/" end onClick={scrollToTop}>
                 Página Inicial
               </NavLink>
             </li>
             <li>
-              <NavLink to="Áreas-de-atuação">Áreas de Atuação</NavLink>
+              <NavLink to="Áreas-de-atuação" onClick={scrollToTop}>
+                Áreas de Atuação
+              </NavLink>
             </li>
             <li>
-              <NavLink to="Nosso-Escritório">Nosso-Escritório</NavLink>
+              <NavLink to="Nosso-Escritório" onClick={scrollToTop}>
+                Nosso-Escritório
+              </NavLink>
             </li>
             <li>
-              <NavLink to="Sócios">Sócios</NavLink>
+              <NavLink to="Sócios" onClick={scrollToTop}>
+                Sócios
+              </NavLink>
             </li>
           </ul>
           <ContatcButton

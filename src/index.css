@@ -36,6 +36,19 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  animation: loadBody 1s ease-in-out forwards;
+}
+
+@keyframes loadBody {
+  from {
+    scroll-behavior: smooth;
+  }
+  to {
+    scroll-behavior: none;
+  }
+}
+
 button {
   background-color: transparent;
   border: none;

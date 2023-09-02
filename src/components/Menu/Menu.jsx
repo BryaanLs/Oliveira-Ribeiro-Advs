@@ -1,6 +1,7 @@
 import React from "react";
 import "./Menu.css";
 import { NavLink } from "react-router-dom";
+import logo from "../../assets/img/Logo-ROADVS.webp";
 
 const Menu = () => {
   return (
@@ -8,12 +9,7 @@ const Menu = () => {
       <div className="main-content">
         <div>
           <a href="#" className="logoMenu">
-            <img
-              src="/src/assets/img/Logo-ROADVS.webp"
-              alt="logo"
-              width={110}
-              height={110}
-            />
+            <img src={logo} alt="logo" width={110} height={110} />
           </a>
         </div>
 
