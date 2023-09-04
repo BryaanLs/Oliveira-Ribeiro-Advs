@@ -14,6 +14,9 @@ const jobDescriptionUm = [
   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod necessitatibus commodi quia ex. Quae illum quibusdam voluptate ducimus quaerat consequatur sunt est suscipit, aspernatur tempore rerum qui, cum error dolorem!",
 ];
 
+const currentTime = new Date().getHours();
+alert(currentTime);
+
 const AreasDeAtuacao = () => {
   return (
     <>

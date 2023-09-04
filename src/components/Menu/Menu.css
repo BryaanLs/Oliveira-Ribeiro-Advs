@@ -99,6 +99,7 @@ a.active::after {
   .logoMenu {
     position: relative;
     margin-left: 2rem;
+    display: none;
   }
 
   .logoMenu::after {
@@ -127,6 +128,7 @@ a.active::after {
     height: max-content;
     opacity: 1;
     top: 0;
+    padding-top: 80px;
   }
 
   .funcionamento {

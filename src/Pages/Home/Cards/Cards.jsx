@@ -4,6 +4,7 @@ import livroSVG from "/src/assets/img/livro.svg";
 import marteloSVG from "/src/assets/img/martelinho.svg";
 import pessoaSVG from "/src/assets/img/pessoaEPapel.svg";
 import BoxAnimation from "../../../components/BoxAnimation/BoxAnimation";
+import DataTime from "../../../components/DataTime/DataTime";
 
 // eslint-disable-next-line react/prop-types
 const Cards = ({ animationText }) => {
@@ -11,6 +12,7 @@ const Cards = ({ animationText }) => {
     <>
       <div className="cards main-content">
         <div className="card">
+          <DataTime />
           <img src={pessoaSVG} alt="" />
           <h2>Atendimento presencial</h2>
           <p>OAB n° 12.345/SP</p>
@@ -29,7 +31,6 @@ const Cards = ({ animationText }) => {
         </div>
       </div>
       <div className="cards-description main-content">
-
         <BoxAnimation animacao={animationText}>
           <h2>Confira as áreas de atuação do nosso escritório</h2>
         </BoxAnimation>
@@ -40,7 +41,6 @@ const Cards = ({ animationText }) => {
             especializado em inventário.
           </p>
         </BoxAnimation>
-        
       </div>
     </>
   );

@@ -6,14 +6,12 @@ import Footer from "./components/Footer/Footer.jsx";
 import AreasDeAtuacao from "./Pages/AreasDeAtuacao/AreasDeAtuacao.jsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import WhatsappButton from "./components/WhatsappButton/WhatsappButton.jsx";
-import ScrollToTop from "./components/ScrollToTop/ScrollToTop.jsx";
 
 const App = () => {
   return (
     <>
       <BrowserRouter>
         <Header />
-        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="Áreas-de-atuação" element={<AreasDeAtuacao />} />

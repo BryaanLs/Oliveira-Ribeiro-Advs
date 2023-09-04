@@ -1,0 +1,26 @@
+.containerSaudation {
+  position: absolute;
+  width: max-content;
+  padding: 1rem;
+  border-radius: 1rem;
+  left: 0;
+  top: -140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.containerSaudation p {
+  color: #fff;
+  font-size: 2rem;
+  background-color: var(--corPrimaria);
+  width: 100%;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.containerSaudation .timeSaudation {
+  font-weight: bold;
+  text-align: center;
+  width: max-content;
+}

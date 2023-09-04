@@ -6,9 +6,10 @@
 }
 
 .swiper-pagination-bullet {
-  width: 10px;
-  height: 10px;
-  background-color: #fff;
+  width: 15px;
+  height: 15px;
+  background-color: transparent;
+  border: 1px solid #fff;
   opacity: 1;
   transition: opacity 0.2s ease;
   position: relative;
@@ -16,9 +17,10 @@
 }
 
 .swiper-pagination-bullet-active {
-  background-color: var(--corSecundariaSegundoTom);
-  width: 12px;
-  height: 12px;
+  background-color: var(--corSecundaria);
+  border: 1px solid var(--corSecundaria);
+  width: 15px;
+  height: 15px;
 }
 .swiper-button-next::after,
 .swiper-button-prev::after {
@@ -65,6 +67,5 @@
 
   .containerSwiper {
     max-height: 70vh;
-
   }
 }

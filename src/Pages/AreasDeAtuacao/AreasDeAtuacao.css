@@ -1,6 +1,6 @@
 .bgHeroAtuacao {
   background: url(/src/assets/img/hero-atuacao.webp);
-  min-height: 50vh;
+  min-height: 70vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -22,6 +22,8 @@
 
 .bgFinalAtuacao {
   background: url(/src/assets/img/bgFinalAtuacao.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .bgFinalAtuacao .main-content {
@@ -55,7 +57,25 @@
 }
 
 @media (max-width: 1070px) {
-  .bgFinalAtuacao {
+  .bgHeroAtuacao .main-content {
+    display: flex;
+  }
+
+  .bgFinalAtuacao .main-content p {
+    min-width: none;
+    max-width: none;
+    padding: 2rem 0;
+  }
+
+  .bgHeroAtuacao .main-content h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .bgFinalAtuacao .main-content {
     flex-direction: column;
+    align-items: center;
+    gap: 0;
+    text-align: center;
   }
 }

@@ -99,12 +99,6 @@ span {
   margin-top: 13rem;
 }
 
-@media (max-width: 1070px) {
-  .container {
-    margin-top: 0;
-  }
-}
-
 ::selection {
   background-color: var(--corSecundaria);
   color: #fff;
@@ -118,4 +112,10 @@ span {
 ::-webkit-scrollbar-thumb {
   background-color: var(--corSecundaria);
   border-radius: 2rem;
+}
+
+@media (max-width: 1070px) {
+  .container {
+    margin-top: 0;
+  }
 }
