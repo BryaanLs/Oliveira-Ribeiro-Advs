@@ -14,9 +14,6 @@ const jobDescriptionUm = [
   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod necessitatibus commodi quia ex. Quae illum quibusdam voluptate ducimus quaerat consequatur sunt est suscipit, aspernatur tempore rerum qui, cum error dolorem!",
 ];
 
-const currentTime = new Date().getHours();
-alert(currentTime);
-
 const AreasDeAtuacao = () => {
   return (
     <>
@@ -43,8 +40,8 @@ const AreasDeAtuacao = () => {
 
       <Container containerBg="bgCinza">
         <JobDescription
-          animationText={fromLeftVariant}
-          animationImg={fromRightVariant}
+          animationText={fromRightVariant}
+          animationImg={fromLeftVariant}
           span="Texto descritivo"
           title="Direito Civil"
           paragraphs={jobDescriptionUm}

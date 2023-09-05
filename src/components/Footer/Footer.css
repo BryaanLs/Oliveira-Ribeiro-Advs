@@ -1,7 +1,5 @@
 footer.container {
   margin: 0;
-  /* border-top: 2px solid var(--corSecundaria); */
-  /* box-shadow: 0 -2px 5px var(--corSecundaria); */
   padding: 5rem 3rem;
 }
 
@@ -49,7 +47,7 @@ footer.container {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background-color: var(--corSecundaria);
+  background-color: var(--corDestaque);
   position: absolute;
   left: -15px;
   margin-top: 7px;
@@ -72,7 +70,7 @@ footer.container {
   width: 5px;
   height: 60%;
   border-radius: 20%;
-  background-color: var(--corSecundaria);
+  background-color: var(--corDestaque);
   position: absolute;
   left: -13px;
   top: 19%;
