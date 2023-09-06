@@ -100,6 +100,35 @@ span {
   margin-top: 13rem;
 }
 
+.bgHero {
+  min-height: 70vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bgHero .main-content {
+  width: 100%;
+  animation: heroAnimation 0.8s;
+}
+
+.bgHero h1 {
+  color: #fff;
+  text-align: center;
+}
+
+@keyframes heroAnimation {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 ::selection {
   background-color: var(--corSecundaria);
   color: #fff;
@@ -118,5 +147,15 @@ span {
 @media (max-width: 1070px) {
   .container {
     margin-top: 0;
+  }
+  .bgHero .main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .bgHero .main-content h1 {
+    font-size: 3rem;
+    text-align: center;
   }
 }

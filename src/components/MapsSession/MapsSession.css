@@ -81,7 +81,7 @@
   }
 
   .maps-content li {
-    border-bottom: 2px solid var(--corSecundaria);
+    border-bottom: 2px solid var(--corDestaque);
   }
 
   .maps {

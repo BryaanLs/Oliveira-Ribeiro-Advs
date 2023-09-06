@@ -1,7 +1,7 @@
 import React from "react";
 import { Player, Controls } from "@lottiefiles/react-lottie-player";
 import wppLottie from "./data.json";
-import "./WhatsAppButton.css";
+import "./WhatsappButton.css";
 
 const WhatsappButton = () => {
   return (

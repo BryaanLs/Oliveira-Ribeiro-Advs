@@ -1,23 +1,8 @@
-.bgHeroAtuacao {
+.atuacao {
   background: url(/src/assets/img/hero-atuacao.webp);
-  min-height: 70vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  width: 100%;
-  display: flex;
-}
-
-.bgHeroAtuacao .main-content {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  animation: areasDeAtuacao 0.8s ease-in-out;
-}
-
-.bgHeroAtuacao h1 {
-  color: #fff;
 }
 
 .bgFinalAtuacao {
@@ -45,31 +30,11 @@
   max-width: 50%;
 }
 
-@keyframes areasDeAtuacao {
-  from {
-    opacity: 0;
-    transform: translateY(-100px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 @media (max-width: 1070px) {
-  .bgHeroAtuacao .main-content {
-    display: flex;
-  }
-
   .bgFinalAtuacao .main-content p {
     min-width: none;
     max-width: none;
     padding: 2rem 0;
-  }
-
-  .bgHeroAtuacao .main-content h1 {
-    font-size: 3rem;
-    text-align: center;
   }
 
   .bgFinalAtuacao .main-content {

@@ -1,0 +1,63 @@
+.ourOffice,
+.bgTwoOurOffice {
+  background-image: url(/src/assets/img/heroOurOffice.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bgTwoOurOffice {
+  background-image: url(/src/assets/img/bgTwoOurOffice.png);
+  min-height: 40vh;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.reverseMaps {
+  flex-direction: row-reverse;
+}
+
+.subtitleMaps {
+  position: relative;
+  top: -30px;
+}
+
+.reverseMaps h2,
+.reverseMaps h3,
+.reverseMaps p > span {
+  color: var(--corPrimaria);
+}
+
+.reverseMaps p,
+.reverseMaps p > a {
+  color: var(--cinzaLetras);
+}
+
+.reverseMaps h3 {
+  font-size: 2.3rem;
+}
+
+.reverseMaps p > a {
+  font-weight: bold;
+}
+
+.reverseMaps .contactButton {
+  text-decoration: none;
+  position: relative;
+  bottom: -30px;
+}
+
+@media (max-width: 1070px) {
+  .reverseMaps {
+    flex-direction: column;
+  }
+
+  .reverseMaps iframe {
+    margin-top: 10rem;
+  }
+
+  .reverseMaps h3 {
+    text-align: center;
+  }
+}

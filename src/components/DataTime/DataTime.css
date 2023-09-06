@@ -27,10 +27,12 @@
 
 @media (max-width: 1070px) {
   .containerSaudation p {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
+    margin: 3px 0;
   }
 
   .containerSaudation {
-    top: -110px;
+    top: -100px;
+    left: -10px;
   }
 }

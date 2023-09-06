@@ -6,6 +6,7 @@ import Footer from "./components/Footer/Footer.jsx";
 import AreasDeAtuacao from "./Pages/AreasDeAtuacao/AreasDeAtuacao.jsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import WhatsappButton from "./components/WhatsappButton/WhatsappButton.jsx";
+import NossoEscritorio from "./Pages/NossoEscritorio/NossoEscritorio.jsx";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="Áreas-de-atuação" element={<AreasDeAtuacao />} />
+          <Route path="Nosso-Escritório" element={<NossoEscritorio />} />
         </Routes>
         <Footer />
         <WhatsappButton />

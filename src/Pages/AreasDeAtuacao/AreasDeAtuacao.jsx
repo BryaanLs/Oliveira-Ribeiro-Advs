@@ -17,11 +17,9 @@ const jobDescriptionUm = [
 const AreasDeAtuacao = () => {
   return (
     <>
-      <div className="container bgHeroAtuacao">
+      <div className="container bgHero atuacao">
         <div className="main-content">
-          <h1>
-            Conheça as áreas de atuação do escritório Oliveira Ribeiro Advs
-          </h1>
+          <h1>Conheça Nossos Campos de Atuação</h1>
         </div>
       </div>
 

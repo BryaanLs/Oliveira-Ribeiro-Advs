@@ -18,6 +18,10 @@ import {
 } from "/src/components/Animations.js";
 import Container from "../../components/Container/Container";
 
+import imgLocalizacao from "../../assets/img/localização.svg";
+import imgCelular from "../../assets/img/celular.svg";
+import imgEmail from "../../assets/img/email.svg";
+
 const jobDescriptionUm = [
   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod necessitatibus commodi quia ex. Quae illum quibusdam voluptate ducimus quaerat consequatur sunt est suscipit, aspernatur tempore rerum qui, cum error dolorem!",
   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod necessitatibus commodi quia ex. Quae illum quibusdam voluptate ducimus quaerat consequatur sunt est suscipit, aspernatur tempore rerum qui, cum error dolorem!",
@@ -82,7 +86,12 @@ const Home = () => {
 
       <Container containerBg="bgMaps">
         <BoxAnimation animacao={fromBottomWithBlurVariant}>
-          <MapsSession />
+          <MapsSession
+            title="O escritório Oliveira Ribeiro Advs"
+            imgLocalizacao={imgLocalizacao}
+            imgCelular={imgCelular}
+            imgEmail={imgEmail}
+          />
         </BoxAnimation>
       </Container>
 

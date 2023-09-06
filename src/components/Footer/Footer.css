@@ -104,5 +104,6 @@ footer.container {
 
   .footerDescription {
     align-items: center;
+    margin-top: 5rem;
   }
 }
