@@ -68,8 +68,8 @@ const MapsSession = ({
             height="300"
             style={{ border: 0 }}
             allowfullscreen="true"
-            loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
+            loading="lazy"
           ></iframe>
         </div>
       </div>

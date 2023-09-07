@@ -6,4 +6,17 @@
   left: inherit;
   right: inherit;
   bottom: inherit;
+  display: inherit;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: transparent;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  text-align: inherit;
+  text-decoration: none;
+  list-style: none;
+  cursor: inherit;
 }
