@@ -39,7 +39,7 @@ const MapsSession = ({
                 loading="lazy"
               />
               <p>
-                <span>Atendimento:</span>De segunda a sexta, das 8h às 18h
+                <span>Atendimento:</span>De seg a sex, das 8h às 18h
               </p>
             </li>
             <li>

@@ -16,13 +16,11 @@
   -webkit-backdrop-filter: blur(0.4rem);
 }
 
-
-
 .btnMenu::after {
   content: url(/src/assets/img/Logo-OliveiraAdvs.svg);
   position: fixed;
   left: 5px;
-  top: -20px;
+  top: -10px;
   transform: scale(50%);
 }
 
