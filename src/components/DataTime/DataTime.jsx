@@ -18,8 +18,7 @@ const DataTime = () => {
 
   return (
     <div className="containerSaudation">
-      <p className="timeSaudation">{greeting}</p>
-      <p>Seja Bem-vindo(a)!</p>
+      <p className="timeSaudation">{greeting}, Seja Bem-vindo(a)!</p>
     </div>
   );
 };

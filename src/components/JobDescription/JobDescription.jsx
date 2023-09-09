@@ -28,7 +28,13 @@ const JobDescription = ({
           </BoxAnimation>
         </div>
         <BoxAnimation animacao={animationImg}>
-          <img src={imgSrc} alt={imgAlt} loading="lazy" />
+          <img
+            src={imgSrc}
+            alt={imgAlt}
+            loading="lazy"
+            width="350"
+            height="267"
+          />
         </BoxAnimation>
       </div>
     </>

@@ -21,7 +21,7 @@ const Header = () => {
         menuAberto={menuAberto}
         handleClickMenu={handleClickMenu}
       />
-      <Menu classMenu={classMenu} />
+      <Menu classMenu={classMenu} handleClickMenu={handleClickMenu} />
     </>
   );
 };

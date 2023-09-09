@@ -12,7 +12,11 @@ const Cards = ({ animationText }) => {
     <>
       <div className="cards main-content">
         <div className="card">
-          <DataTime />
+          <div className="saudation">
+            <DataTime />
+            <h2>Nosso escritório está localizado no Itaim-bibi, São Paulo!</h2>
+          </div>
+          {/* <DataTime /> */}
           <img src={pessoaSVG} alt="icone de uma pessoa e um papel" />
           <h2>Atendimento presencial</h2>
           <p>OAB n° 12.345/SP</p>

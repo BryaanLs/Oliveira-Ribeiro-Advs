@@ -4,9 +4,10 @@ import { Autoplay, EffectFade, Pagination, Navigation } from "swiper/modules";
 import "swiper/css/bundle";
 import "./Carrossel.css";
 
-import escritorioUm from "../../assets/img/coworking-escritório-1-1200x800.jpg";
+import escritorioUm from "../../assets/img/carrossel1.webp";
 import escritorioDois from "../../assets/img/escritorio-em-casa-1.jpg";
 import escritorioTres from "../../assets/img/transferir.jpeg";
+import DataTime from "../DataTime/DataTime";
 
 const Carrossel = () => {
   return (

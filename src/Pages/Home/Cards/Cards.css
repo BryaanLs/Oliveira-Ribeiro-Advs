@@ -81,11 +81,32 @@
   font-size: 2.3rem;
 }
 
+.cards-description h2 {
+  border-left: 8px solid var(--corDestaque);
+  padding-left: 3rem;
+}
+
 .card {
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 0.5s, transform 0.5s;
   animation: card-animation 1s ease-in-out forwards;
+}
+
+.saudation {
+  width: max-content;
+  height: max-content;
+  display: flex;
+  position: absolute;
+  left: 0;
+  top: -300px;
+}
+
+.saudation h2 {
+  width: 500px;
+  height: max-content;
+  color: #fff;
+  font-size: 4rem;
 }
 @keyframes card-animation {
   to {
@@ -96,7 +117,10 @@
 
 @media (max-width: 1400px) {
   .cards {
-    top: -180px;
+    top: -140px;
+  }
+  .saudation {
+    top: -200px;
   }
 
   .card p {
@@ -119,6 +143,13 @@
   .cards {
     flex-direction: column;
     align-items: center;
+  }
+  .saudation h2 {
+    font-size: 2.5rem;
+    width: 90vw;
+  }
+  .saudation {
+    top: -130px;
   }
 
   .card {

@@ -3,36 +3,35 @@
   width: max-content;
   padding: 1rem;
   border-radius: 1rem;
-  left: 0;
-  top: -110px;
+  left: -20px;
+  top: -50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
 .containerSaudation p {
-  color: #fff;
-  font-size: 1.5rem;
-  background-color: var(--corPrimaria);
+  color: #fff !important;
+  font-size: 1.6rem;
   width: 100%;
   padding: 1rem;
   border-radius: 1rem;
 }
 
 .containerSaudation .timeSaudation {
-  font-weight: bold;
+  font-style: italic;
   text-align: center;
   width: max-content;
 }
 
 @media (max-width: 1070px) {
   .containerSaudation p {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     margin: 3px 0;
   }
 
   .containerSaudation {
-    top: -100px;
-    left: -10px;
+    top: -50px;
+    left: -20px;
   }
 }

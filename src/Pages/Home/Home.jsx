@@ -3,17 +3,16 @@ import "./Home.css";
 import Carrossel from "../../components/Carrossel/Carrossel";
 import Cards from "./Cards/Cards";
 import JobDescription from "../../components/JobDescription/JobDescription";
-import imgUm from "/src/assets/img/Rectangle 248.png";
+import DCivil from "/src/assets/img/Dcivil.webp";
+import Dempresarial from "/src/assets/img/Dempresarial.webp";
+import Dfamilia from "/src/assets/img/Dfamilia.webp";
 import imgDois from "/src/assets/img/homenzinho.png";
 import ContatcButton from "../../components/ContactButton/ContatcButton";
 import MapsSession from "../../components/MapsSession/MapsSession";
 import BoxAnimation from "../../components/BoxAnimation/BoxAnimation";
 import {
-  boxVariant,
   fromRightVariant,
   fromLeftVariant,
-  scaleVariant,
-  fromBottomVariant,
   fromBottomWithBlurVariant,
 } from "/src/components/Animations.js";
 import Container from "../../components/Container/Container";
@@ -22,9 +21,19 @@ import imgLocalizacao from "../../assets/img/localização.svg";
 import imgCelular from "../../assets/img/celular.svg";
 import imgEmail from "../../assets/img/email.svg";
 
-const jobDescriptionUm = [
-  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod necessitatibus commodi quia ex. Quae illum quibusdam voluptate ducimus quaerat consequatur sunt est suscipit, aspernatur tempore rerum qui, cum error dolorem!",
-  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod necessitatibus commodi quia ex. Quae illum quibusdam voluptate ducimus quaerat consequatur sunt est suscipit, aspernatur tempore rerum qui, cum error dolorem!",
+const txtDcivil = [
+  "O Direito Civil é uma das principais áreas do direito no Brasil, pois carrega as bases para a convivência em sociedade em todos os âmbitos da vida.",
+  "O Direito Civil é regido pelo Código Civil, que, por sua vez, norteia todas as relações em sociedade. Desse modo, ele abrange 100% da população e permeia todas as relações, de divórcios a contratos de compra e venda, heranças etc.",
+];
+
+const txtDempresarial = [
+  "O Direito Empresarial é uma área do direito privado responsável por tratar relações de interesses das empresas e empreendedores.",
+  "O direito privado aborda os direitos particulares, ou seja, as relações entre as partes e suas vidas privadas. Seu principal objetivo é regularizar a vida em sociedade, defendendo a ordem e definindo os direitos e as obrigações dos indivíduos.",
+];
+
+const txtDfamiliar = [
+  "O Direito de Família trata de assuntos que afetam, direta ou indiretamente, a vida de todos.",
+  "Temas como casamento, união estável, divórcio, alimentos, guarda de filhos, partilha de bens e direito de visita são experiências vivenciadas por grande parte da população.",
 ];
 
 const Home = () => {
@@ -42,12 +51,12 @@ const Home = () => {
         <JobDescription
           animationText={fromLeftVariant}
           animationImg={fromRightVariant}
-          span="Texto descritivo"
+          span="Sociedade"
           title="Direito Civil"
-          paragraphs={jobDescriptionUm}
+          paragraphs={txtDcivil}
           mainClass="jobDescription"
-          imgSrc={imgUm}
-          imgAlt="img teste"
+          imgSrc={DCivil}
+          imgAlt="Imagem com uma população"
         ></JobDescription>
       </Container>
 
@@ -55,12 +64,12 @@ const Home = () => {
         <JobDescription
           animationText={fromRightVariant}
           animationImg={fromLeftVariant}
-          span="Texto descritivo"
-          title="Direito Civil"
-          paragraphs={jobDescriptionUm}
+          span="Empresas & Empreendedores"
+          title="Direito Empresarial"
+          paragraphs={txtDempresarial}
           mainClass="reverse"
-          imgSrc={imgUm}
-          imgAlt="img teste"
+          imgSrc={Dempresarial}
+          imgAlt="imagem com um escritório"
         ></JobDescription>
       </Container>
 
@@ -68,13 +77,12 @@ const Home = () => {
         <JobDescription
           animationText={fromLeftVariant}
           animationImg={fromRightVariant}
-          span="Texto descritivo"
-          title="Direito Civil"
-          paragraphs={jobDescriptionUm}
+          span="Família"
+          title="Direito Familiar"
+          paragraphs={txtDfamiliar}
           mainClass="jobDescription"
-          imgSrc={imgUm}
-          imgAlt="img teste"
-          reverse={""}
+          imgSrc={Dfamilia}
+          imgAlt="imagem representando familia, a imagem contém as mãos de um bebe sob a mão de seus pais"
         >
           <ContatcButton
             textButton={"Agendar um horário"}
