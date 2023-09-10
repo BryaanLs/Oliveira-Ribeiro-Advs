@@ -161,8 +161,16 @@
     flex-direction: column;
   }
 
+  .card p {
+    text-align: center;
+  }
+
   .cards-description h2,
   .cards-description p {
     text-align: center;
+  }
+
+  .bgSecondSession {
+    background-attachment: scroll;
   }
 }

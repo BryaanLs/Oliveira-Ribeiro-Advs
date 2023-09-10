@@ -53,6 +53,12 @@
     flex-direction: column;
   }
 
+  .ourOffice,
+  .bgTwoOurOffice {
+    background-attachment: scroll;
+    background-position: 50%;
+  }
+
   .reverseMaps iframe {
     margin-top: 10rem;
   }

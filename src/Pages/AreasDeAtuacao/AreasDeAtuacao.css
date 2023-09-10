@@ -2,7 +2,9 @@
   background: url(/src/assets/img/hero-atuacao.webp);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center center;
   background-attachment: fixed;
+  backdrop-filter: blur(90%);
 }
 
 .bgFinalAtuacao {
@@ -42,5 +44,10 @@
     align-items: center;
     gap: 0;
     text-align: center;
+  }
+
+  .atuacao {
+    background-attachment: scroll;
+    background-position: 15%;
   }
 }
