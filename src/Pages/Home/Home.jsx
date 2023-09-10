@@ -92,7 +92,7 @@ const Home = () => {
         </JobDescription>
       </Container>
 
-      <Container containerBg="bgMaps">
+      <Container containerBg="bgSecondSession">
         <BoxAnimation animacao={fromBottomWithBlurVariant}>
           <MapsSession
             title="O escritório Oliveira Ribeiro Advs"
