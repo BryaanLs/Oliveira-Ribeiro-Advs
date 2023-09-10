@@ -1,5 +1,5 @@
 .bgMaps {
-  background-image: url(/src/assets/img/BgMaps.webp);
+  background-image: url(/src/assets/img/bgMaps.webp) !important;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center bottom;
