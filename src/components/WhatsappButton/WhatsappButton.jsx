@@ -13,25 +13,24 @@ const WhatsappButton = () => {
     `https://api.whatsapp.com/send?phone=+5511975950351&text=${message}`
   );
 
-  function handleChange({ target }) {
-    const newMessage = target.value;
-
-    if (message.length > 0) {
-      setMessage(newMessage);
-    }
-    if (newMessage.length <= 1) {
+  React.useEffect(() => {
+    if (message.length <= 1) {
       setMessage("Olá, gostaria de tirar algumas dúvidas!");
     }
-
     setLink(
       `https://api.whatsapp.com/send?phone=+5511975950351&text=${message}`
     );
+    console.log(message);
+  }, [message]);
+
+  function handleChange({ target }) {
+    setMessage(target.value);
   }
 
   function handleClick() {
     setBoxWhats((value) => !value);
     if (!boxWhats) {
-      setMessage(encodeURIComponent("Olá, gostaria de tirar algumas dúvidas!"));
+      setMessage("Olá, gostaria de tirar algumas dúvidas!");
       setLink(
         `https://api.whatsapp.com/send?phone=+5511975950351&text=${message}`
       );
@@ -72,8 +71,8 @@ const WhatsappButton = () => {
             type="text"
             placeholder="Digite sua mensagem!"
             onChange={handleChange}
-          />{" "}
-          <a href={link} target="_blank">
+          />
+          <a href={link} target="_blank" onKeyDown={console.log("oi")}>
             <img
               src={sendIcon}
               alt="icone de aviãozinho"
