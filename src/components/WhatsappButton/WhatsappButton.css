@@ -116,3 +116,16 @@
   /* width: 30px; */
   /* height: 30px; */
 }
+
+@keyframes closeChat {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.closeChatAnimation {
+  animation: closeChat 1s ease-in-out both;
+}

@@ -37,6 +37,10 @@ const WhatsappButton = () => {
     }
   }
 
+  function closeChat({ target }) {
+    setBoxWhats(false);
+  }
+
   if (!boxWhats) {
     return (
       <div className="closedBox fixedBox">
@@ -48,7 +52,7 @@ const WhatsappButton = () => {
   }
 
   return (
-    <div className="openedBox fixedBox">
+    <div className="openedBox fixedBox" onMouseLeave={closeChat}>
       <button onClick={handleClick} className="closeChatBtn">
         X
       </button>
