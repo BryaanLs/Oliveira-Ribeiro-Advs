@@ -78,8 +78,6 @@ const AreasDeAtuacao = () => {
           </p>
         </div>
       </Container>
-
-      <section className="container"></section>
     </>
   );
 };

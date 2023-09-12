@@ -17,7 +17,7 @@
 }
 
 .btnMenu::after {
-  content: url(/src/assets/img/Logo-OliveiraAdvs.svg);
+  content: url(../../assets/img/Logo-OliveiraAdvs.svg);
   position: fixed;
   left: 5px;
   top: -10px;

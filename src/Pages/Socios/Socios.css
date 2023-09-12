@@ -1,0 +1,47 @@
+.bgHeroSocios {
+  background-image: url(../../assets/img/AdvogadosDoEscritorio.webp);
+  min-height: 70vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.bgHeroSocios h2 {
+  margin-top: 1rem;
+  padding-left: 1rem;
+  border-left: 5px solid var(--corDestaque);
+  color: var(--corDestaque);
+  font-size: 3rem;
+}
+
+.socios ul li {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 0.5rem 0;
+  font-weight: bold;
+  color: var(--corPrimariaSegundoTom);
+}
+
+.socios ul li img {
+  box-shadow: none;
+  border-radius: 0;
+}
+
+@media (max-width: 1070px) {
+  .bgHeroSocios {
+    text-align: center;
+  }
+
+  .socios {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .socios ul {
+    margin-top: 3rem;
+  }
+}

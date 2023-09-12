@@ -118,7 +118,7 @@ const Home = () => {
         </div>
       </section>
 
-      <Container containerBg="bgMaps">
+      <Container containerBg="bgFinalHome">
         <div className="aboutMe main-content">
           <BoxAnimation animacao={fromLeftVariant}>
             <div className="aboutMe-text">

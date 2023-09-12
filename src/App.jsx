@@ -8,17 +8,19 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import WhatsappButton from "./components/WhatsappButton/WhatsappButton.jsx";
 import NossoEscritorio from "./Pages/NossoEscritorio/NossoEscritorio.jsx";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop.jsx";
+import Socios from "./Pages/Socios/Socios.jsx";
 
 const App = () => {
   return (
     <>
       <BrowserRouter>
         <Header />
-        <ScrollToTop/>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="Áreas-de-atuação" element={<AreasDeAtuacao />} />
           <Route path="Nosso-Escritório" element={<NossoEscritorio />} />
+          <Route path="Sócios" element={<Socios />} />
         </Routes>
         <Footer />
         <WhatsappButton />

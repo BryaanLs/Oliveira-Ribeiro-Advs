@@ -1,3 +1,11 @@
+.bgFinalHome {
+  background-image: url(/src/assets/img/AdvogadosDoEscritorio.webp) !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+}
+
 .home.container {
   padding: 0;
   margin: 0;
@@ -52,5 +60,10 @@
 
   .aboutMe img {
     width: 100%;
+  }
+
+  .bgFinalHome {
+    background-position: 60%;
+    background-attachment: scroll;
   }
 }

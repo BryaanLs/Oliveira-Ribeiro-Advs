@@ -11,6 +11,10 @@
   background: url(/src/assets/img/bgFinalAtuacao.webp);
   background-repeat: no-repeat;
   background-size: cover;
+  height: 45vh;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20rem;
 }
 
 .bgFinalAtuacao .main-content {

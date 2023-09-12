@@ -41,8 +41,7 @@ const Cards = ({ animationText }) => {
 
         <BoxAnimation animacao={animationText}>
           <p>
-            10 anos de atuação no ramo de Direito da Família. Advogado
-            especializado em inventário.
+            6 anos de experiência em Direito Cível, Empresarial e Imobiliario.
           </p>
         </BoxAnimation>
       </div>
