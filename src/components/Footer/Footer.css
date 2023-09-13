@@ -21,6 +21,7 @@ footer.container {
   display: block;
   color: #fff;
   width: max-content;
+  font-size: 1.3rem;
 }
 
 .nav-navlink ul li a:not(.active) {
@@ -28,7 +29,7 @@ footer.container {
 }
 
 .nav h3 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
   position: relative;
   right: 13px;
@@ -42,7 +43,7 @@ footer.container {
   font-weight: bold;
   position: relative;
   width: max-content;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
 }
 
 .nav-navlink a:nth-child(1):not(.active)::before {
@@ -58,7 +59,7 @@ footer.container {
 .nav-navlink .active::after {
   text-decoration: none;
   content: "(Ir ao topo)";
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   background-color: transparent;
   font-weight: normal;
   position: inherit;
@@ -88,7 +89,7 @@ footer.container {
 
 .footerDescription h3,
 .footerDescription p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   left: 0;
 }
 
@@ -103,22 +104,69 @@ footer.container {
   margin-right: 5rem;
 }
 
-.adress {
+.adressContact {
   width: 100%;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
 }
 
-.adress h3,
+.adressContact h3,
 .social h3 {
   right: 0;
 }
 
-.adress p {
+.adressContact p {
   color: #fff;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+.social {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.socialIcons {
+  display: flex;
+
+  width: max-content;
+  align-items: center;
+  gap: 2rem;
+}
+
+.socialIcons li a {
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #d9d9d9;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out,
+    background 0.2s ease-in-out;
+}
+
+.socialIcons li a:hover {
+  transform: translateY(2px);
+  box-shadow: 0 0 20px var(--corDestaque);
+  background-color: var(--corDestaque);
+}
+.socialIcons li a img {
+  transition: filter 0.2s ease-in-out;
+  padding: 1rem;
+  width: 100%;
+  height: 100%;
+}
+.socialIcons li a img:hover {
+  filter: brightness(0%) invert(100%);
 }
 
 .social a {
   text-decoration: underline;
+  font-size: 1.3rem;
   color: var(--corSecundariaSegundoTom);
 }
 
@@ -136,6 +184,7 @@ footer.container {
 .nextContent p {
   color: #fff;
   font-weight: 100;
+  font-size: 1.2rem;
 }
 
 .nextContent a {
@@ -145,6 +194,7 @@ footer.container {
   transition: color 0.5s ease-in-out;
   overflow: hidden;
   position: relative;
+  font-size: 1.2rem;
 }
 
 .bgFooter {
@@ -182,18 +232,24 @@ footer.container {
     gap: 3rem;
   }
 
-  .adress h3,
+  .adressContact h3,
   .social h3 {
     padding-top: 2rem;
     width: 100%;
   }
 
-  .adress {
+  .adressContact {
     text-align: center;
   }
 
   .social {
     text-align: center;
+  }
+
+  .socialIcons {
+    justify-content: center;
+    margin-top: 2rem;
+    width: 100%;
   }
 
   .footerDescription {

@@ -5,7 +5,7 @@ import Cards from "./Cards/Cards";
 import JobDescription from "../../components/JobDescription/JobDescription";
 import DCivil from "/src/assets/img/Dcivil.webp";
 import Dempresarial from "/src/assets/img/Dempresarial.webp";
-import Dfamilia from "/src/assets/img/Dfamilia.webp";
+import DImobiliario from "/src/assets/img/DImobiliario.webp";
 import imgDois from "/src/assets/img/homenzinho.png";
 import ContatcButton from "../../components/ContactButton/ContatcButton";
 import MapsSession from "../../components/MapsSession/MapsSession";
@@ -17,6 +17,10 @@ import {
 } from "/src/components/Animations.js";
 import Container from "../../components/Container/Container";
 
+import calendar from "../../assets/img/calendario.svg";
+import excelencia from "../../assets/img/excelencia.svg";
+import maoVerificado from "../../assets/img/maoVerificado.svg";
+import verificado from "../../assets/img/verificado.svg";
 import imgLocalizacao from "../../assets/img/localização.svg";
 import imgCelular from "../../assets/img/celular.svg";
 import imgEmail from "../../assets/img/email.svg";
@@ -77,12 +81,12 @@ const Home = () => {
         <JobDescription
           animationText={fromLeftVariant}
           animationImg={fromRightVariant}
-          span="Família"
-          title="Direito Familiar"
+          span="Imóvel"
+          title="Direito Imobiliário"
           paragraphs={txtDfamiliar}
           mainClass="jobDescription"
-          imgSrc={Dfamilia}
-          imgAlt="imagem representando familia, a imagem contém as mãos de um bebe sob a mão de seus pais"
+          imgSrc={DImobiliario}
+          imgAlt="imagem com uma casa em um fim de tarde"
         >
           <ContatcButton
             textButton={"Agendar um horário"}
@@ -99,6 +103,7 @@ const Home = () => {
             imgLocalizacao={imgLocalizacao}
             imgCelular={imgCelular}
             imgEmail={imgEmail}
+            destaqueClass="destaqueTitleMaps"
           />
         </BoxAnimation>
       </Container>
@@ -109,11 +114,59 @@ const Home = () => {
             <h2>Atuamos com ética, transparência e respeito.</h2>
           </BoxAnimation>
           <BoxAnimation animacao={fromRightVariant}>
-            <p>
-              O advogado deve proceder de forma que o torne merecedor de
-              respeito e que contribua para o prestígio da classe e da
-              advocacia. &ldquo; (Estatuto da OAB, art. 31).&rdquo;
-            </p>
+            <div className="valores">
+              <h3>Nossos Valores</h3>
+              <ul>
+                <li>
+                  <div className="ballIcon">
+                    <img
+                      src={excelencia}
+                      alt="icone de um livro"
+                      loading="lazy"
+                      width="50"
+                      height="40"
+                    />
+                  </div>
+                  <span>Excelência</span>
+                </li>
+                <li>
+                  <div className="ballIcon">
+                    <img
+                      src={verificado}
+                      alt="icone de verificado"
+                      loading="lazy"
+                      width="50"
+                      height="40"
+                    />
+                  </div>
+                  <span>Ética</span>
+                </li>
+                <li>
+                  <div className="ballIcon">
+                    <img
+                      src={maoVerificado}
+                      alt="icone de uma mão com um sinal positivo em cima"
+                      loading="lazy"
+                      width="50"
+                      height="40"
+                    />
+                  </div>
+                  <span>Empatia</span>
+                </li>
+                <li>
+                  <div className="ballIcon">
+                    <img
+                      src={calendar}
+                      alt="icone de um calendario"
+                      loading="lazy"
+                      width="50"
+                      height="40"
+                    />
+                  </div>
+                  <span>Agilidade</span>
+                </li>
+              </ul>
+            </div>
           </BoxAnimation>
         </div>
       </section>

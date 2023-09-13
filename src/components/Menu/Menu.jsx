@@ -2,7 +2,7 @@
 import React from "react";
 import "./Menu.css";
 import { NavLink } from "react-router-dom";
-import logo from "../../assets/img/Logo-ROADVS.webp";
+import logo from "../../assets/img/Logo-OliveiraAdvs.svg";
 
 const Menu = ({ handleClickMenu }) => {
   return (
@@ -29,7 +29,7 @@ const Menu = ({ handleClickMenu }) => {
           </NavLink>
         </nav>
         <div className="funcionamento">
-          <p>Seg a Sex - 9h às 18h | (11) 99999-9999</p>
+          <p>Seg a Sex - 8h às 17h | (11) 97595-0351</p>
           <a href="#">entre em contato</a>
         </div>
       </div>

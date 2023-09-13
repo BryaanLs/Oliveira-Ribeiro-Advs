@@ -5,8 +5,8 @@ import "swiper/css/bundle";
 import "./Carrossel.css";
 
 import escritorioUm from "../../assets/img/carrossel1.webp";
-import escritorioDois from "../../assets/img/escritorio-em-casa-1.jpg";
-import escritorioTres from "../../assets/img/transferir.jpeg";
+import escritorioDois from "../../assets/img/carrossel2.webp";
+import escritorioTres from "../../assets/img/carrossel3.webp";
 import DataTime from "../DataTime/DataTime";
 
 const Carrossel = () => {
@@ -23,13 +23,28 @@ const Carrossel = () => {
         navigation={true}
       >
         <SwiperSlide>
-          <img src={escritorioUm} alt="Foto do escritório" />
+          <img
+            src={escritorioTres}
+            alt="Foto do escritório"
+            width="1915"
+            height="917"
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={escritorioDois} alt="Foto do escritório" />
+          <img
+            src={escritorioUm}
+            alt="Foto do escritório"
+            width="1915"
+            height="917"
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={escritorioTres} alt="Foto do escritório" />
+          <img
+            src={escritorioDois}
+            alt="Foto do escritório"
+            width="1915"
+            height="917"
+          />
         </SwiperSlide>
       </Swiper>
     </div>
