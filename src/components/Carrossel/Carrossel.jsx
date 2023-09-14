@@ -28,6 +28,7 @@ const Carrossel = () => {
             alt="Foto do escritório"
             width="1915"
             height="917"
+            className="swiper-img"
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -36,6 +37,7 @@ const Carrossel = () => {
             alt="Foto do escritório"
             width="1915"
             height="917"
+            className="swiper-img"
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -44,6 +46,7 @@ const Carrossel = () => {
             alt="Foto do escritório"
             width="1915"
             height="917"
+            className="swiper-img"
           />
         </SwiperSlide>
       </Swiper>

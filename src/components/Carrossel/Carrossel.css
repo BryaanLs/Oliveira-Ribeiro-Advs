@@ -37,9 +37,17 @@
 
 .swiper-slide img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50%;
   filter: saturate(200%) brightness(60%);
 }
+
+.containerSwiper .swiper-slide .swiper-img:nth-of-type(1) {
+  /* Suas regras de estilo para a primeira imagem aqui */
+  object-position: 100%;
+}
+
 
 @media (max-width: 1400px) {
   .swiper-pagination-bullet {
