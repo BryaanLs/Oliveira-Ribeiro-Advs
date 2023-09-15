@@ -20,7 +20,6 @@ const WhatsappButton = () => {
     setLink(
       `https://api.whatsapp.com/send?phone=+5511975950351&text=${message}`
     );
-    console.log(message);
   }, [message]);
 
   function handleChange({ target }) {
@@ -50,7 +49,6 @@ const WhatsappButton = () => {
       </div>
     );
   }
-
   return (
     <div className="openedBox fixedBox" onMouseLeave={closeChat}>
       <button onClick={handleClick} className="closeChatBtn">
