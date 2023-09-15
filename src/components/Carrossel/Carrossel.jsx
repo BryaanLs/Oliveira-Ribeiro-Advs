@@ -22,31 +22,28 @@ const Carrossel = () => {
         pagination={{ clickable: true }}
         navigation={true}
       >
-        <SwiperSlide>
+        <SwiperSlide className="swiper-img slide-1">
           <img
             src={escritorioTres}
             alt="Foto do escritório"
             width="1915"
             height="917"
-            className="swiper-img"
           />
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className="swiper-img slide-2">
           <img
             src={escritorioUm}
             alt="Foto do escritório"
             width="1915"
             height="917"
-            className="swiper-img"
           />
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className="swiper-img slide-3 slide-1">
           <img
             src={escritorioDois}
             alt="Foto do escritório"
             width="1915"
             height="917"
-            className="swiper-img"
           />
         </SwiperSlide>
       </Swiper>

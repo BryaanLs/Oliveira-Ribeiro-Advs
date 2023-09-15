@@ -139,26 +139,37 @@
   }
 }
 
-@media (max-width: 1070px) {
+@media (max-width: 1150px) {
   .cards {
-    flex-direction: column;
     align-items: center;
+    text-align: center;
   }
   .saudation h2 {
     font-size: 2.5rem;
-    width: 90vw;
+    width: 500px;
   }
   .saudation {
     top: -130px;
+    text-align: left;
   }
 
   .card {
     top: 0 !important;
-    margin: 2rem 1rem;
+    margin: 2rem 0rem;
     align-items: center;
   }
   .cards-description {
     flex-direction: column;
+  }
+
+  .card:nth-child(1) {
+    position: relative;
+    right: -20px;
+  }
+  .card:nth-child(3) {
+    position: relative;
+    left: -20px;
+    z-index: -1;
   }
 
   .card p {
@@ -170,7 +181,31 @@
     text-align: center;
   }
 
+  .cards-description h2 {
+    width: max-content;
+    margin: 0 auto;
+  }
+
   .bgSecondSession {
     background-attachment: scroll;
+  }
+}
+
+@media (max-width: 960px) {
+  .cards {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .card:nth-child(1),
+  .card:nth-child(2),
+  .card:nth-child(3) {
+    left: 0;
+    right: 0;
+    height: 220px;
+  }
+
+  .saudation h2 {
+    font-size: 2.5rem;
+    width: 80vw;
   }
 }
