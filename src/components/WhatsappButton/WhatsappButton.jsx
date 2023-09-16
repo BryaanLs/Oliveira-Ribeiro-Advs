@@ -48,10 +48,8 @@ const WhatsappButton = ({ boxWhats, setBoxWhats }) => {
 
   if (!boxWhats) {
     return (
-      <div className="closedBox fixedBox">
-        <p onClick={handleClick} className="openBoxBtn">
-          Entre em contato!
-        </p>
+      <div className="closedBox fixedBox" onClick={handleClick}>
+        <p className="openBoxBtn">Entre em contato!</p>
       </div>
     );
   }

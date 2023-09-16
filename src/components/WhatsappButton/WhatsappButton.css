@@ -9,17 +9,15 @@
   color: #fff;
 }
 
-.closedBox,
-.openedBoxBtn {
-  transition: heigth 1s ease-in-out;
-}
+/* 
+transform: translateY(-200%); */
 
 .openedBox {
-  animation: abriuBox 0.3s both;
+  animation: abriuBox 1s both;
 }
 
 .closedBox {
-  animation: fechouBox 0.3s both;
+  animation: fechouBox 1s both;
 }
 
 .openedBox div {
@@ -28,24 +26,27 @@
 
 @keyframes abriuBox {
   from {
-    height: 0;
+    transform: translateY(200%);
   }
 
   to {
-    height: 400px;
+    transform: translateY(0%);
   }
 }
 
 @keyframes fechouBox {
   from {
-    width: 320px;
-    height: 400px;
+    transform: translateY(200%);
+    opacity: 0;
+    width: 220px;
   }
 
   to {
-    padding: 1rem 3rem;
+    transform: translateY(0%);
+
+    opacity: 1;
     height: 45px;
-    width: 230px;
+    width: 220px;
   }
 }
 
@@ -175,4 +176,42 @@
 
 .closeChatAnimation {
   animation: closeChat 1s ease-in-out both;
+}
+
+@media (max-width: 900px) {
+  .closedBox {
+    padding: 0;
+  }
+  .closedBox {
+    width: 150px;
+    padding: 0;
+    height: 40px;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .fixedBox {
+    right: 10px;
+  }
+  .closedBox p {
+    font-size: 1.2rem;
+  }
+
+  @keyframes fechouBox {
+    from {
+      transform: translateY(200%);
+
+      opacity: 0;
+    }
+
+    to {
+      transform: translateY(0%);
+
+      opacity: 1;
+      height: 40px;
+      width: 150px;
+    }
+  }
 }
