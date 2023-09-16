@@ -1,17 +1,23 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable react/jsx-no-target-blank */
 import React from "react";
 import "./WhatsappButton.css";
 import logo from "../../assets/img/Logo-OliveiraAdvs.svg";
 import sendIcon from "../../assets/img/sendIcon.svg";
-
-const WhatsappButton = () => {
-  const [boxWhats, setBoxWhats] = React.useState(false);
+import { useLocation } from "react-router-dom";
+const WhatsappButton = ({ boxWhats, setBoxWhats }) => {
   const [message, setMessage] = React.useState(
     encodeURIComponent("Olá, gostaria de tirar algumas dúvidas!")
   );
   const [link, setLink] = React.useState(
     `https://api.whatsapp.com/send?phone=+5511975950351&text=${message}`
   );
+
+  const local = useLocation();
+
+  React.useEffect(() => {
+    setBoxWhats(false);
+  }, [local, setBoxWhats]);
 
   React.useEffect(() => {
     if (message.length <= 1) {
@@ -36,8 +42,8 @@ const WhatsappButton = () => {
     }
   }
 
-  function closeChat({ target }) {
-    setBoxWhats(false);
+  function closeChat() {
+    setBoxWhats(null);
   }
 
   if (!boxWhats) {
@@ -50,7 +56,7 @@ const WhatsappButton = () => {
     );
   }
   return (
-    <div className="openedBox fixedBox" onMouseLeave={closeChat}>
+    <div className="openedBox fixedBox">
       <button onClick={handleClick} className="closeChatBtn">
         X
       </button>
@@ -74,7 +80,7 @@ const WhatsappButton = () => {
             placeholder="Digite sua mensagem!"
             onChange={handleChange}
           />
-          <a href={link} target="_blank" onKeyDown={console.log("oi")}>
+          <a href={link} target="_blank">
             <img
               src={sendIcon}
               alt="icone de aviãozinho"

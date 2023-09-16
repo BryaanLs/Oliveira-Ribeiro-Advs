@@ -11,10 +11,16 @@ import ScrollToTop from "./components/ScrollToTop/ScrollToTop.jsx";
 import Socios from "./Pages/Socios/Socios.jsx";
 
 const App = () => {
+  const [boxWhats, setBoxWhats] = React.useState(false);
+
+  function handleClick() {
+    setBoxWhats(false);
+    alert("clicou");
+  }
   return (
-    <>
+    <div>
       <BrowserRouter>
-        <Header />
+        <Header setBoxWhats={setBoxWhats} />
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -23,9 +29,9 @@ const App = () => {
           <Route path="Sócios" element={<Socios />} />
         </Routes>
         <Footer />
-        <WhatsappButton />
+        <WhatsappButton boxWhats={boxWhats} setBoxWhats={setBoxWhats} />
       </BrowserRouter>
-    </>
+    </div>
   );
 };
 
