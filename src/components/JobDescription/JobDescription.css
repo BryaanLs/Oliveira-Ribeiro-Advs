@@ -87,7 +87,9 @@
     margin-left: 0;
   }
   .jobDescription .contactButton {
-    margin: 3rem 0 3rem auto;
+    display: flex;
+    justify-content: left;
+    margin: 3rem 0;
   }
   .jobDescription img,
   .reverse img {
@@ -107,7 +109,6 @@
   .textContent {
     margin-bottom: 5rem;
   }
-
   .jobDescription,
   .reverse {
     flex-direction: column;

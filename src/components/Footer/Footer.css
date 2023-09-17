@@ -172,6 +172,7 @@ footer.container {
 
 .nextFusion {
   background-color: #111e2f;
+  padding: 0 3rem;
 }
 
 .nextContent {
@@ -212,18 +213,30 @@ footer.container {
   .nav {
     flex-direction: column;
     gap: 4rem;
-    align-items: center;
-    justify-content: center;
+    align-items: left;
+    justify-content: left;
   }
 
   .nav-navlink {
-    justify-content: center;
-    align-items: center;
+    justify-content: start;
+    align-items: left;
     width: max-content;
+  }
+
+  .nav-navlink a:nth-child(1):not(.active)::before {
+    left: -3px;
   }
 
   .nav-navlink h3 {
     margin-bottom: 2rem;
+  }
+
+  .nav-navlink ul li {
+    margin-left: 1.2rem;
+  }
+
+  .nav h3 {
+    right: 0;
   }
 
   .nextContent {
@@ -236,18 +249,16 @@ footer.container {
   .social h3 {
     padding-top: 2rem;
     width: 100%;
+    text-align: left;
   }
 
-  .adressContact {
-    text-align: center;
-  }
-
+  .adressContact,
   .social {
-    text-align: center;
+    text-align: left;
   }
 
   .socialIcons {
-    justify-content: center;
+    justify-content: left;
     margin-top: 2rem;
     width: 100%;
   }
@@ -259,5 +270,10 @@ footer.container {
   .logoRodape img {
     margin: 0;
     margin-bottom: 3rem;
+  }
+
+  .nextContent p {
+    text-align: left;
+    width: 100%;
   }
 }
