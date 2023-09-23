@@ -2,7 +2,10 @@
 import React from "react";
 import "./ContainerPicture.css";
 import BoxAnimation from "../BoxAnimation/BoxAnimation";
-import { fromLeftVariant, fromRightVariant } from "../../components/Animations";
+import {
+  fromLeftVariant,
+  fromRightVariant,
+} from "/src/assets/variablesJs/Animations.js";
 
 const ContainerPicture = ({
   srcImg,

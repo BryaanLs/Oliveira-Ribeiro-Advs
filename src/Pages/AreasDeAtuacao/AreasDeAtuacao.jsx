@@ -4,10 +4,11 @@ import JobDescription from "../../components/JobDescription/JobDescription";
 import {
   fromRightVariant,
   fromLeftVariant,
-} from "/src/components/Animations.js";
-import imgUm from "/src/assets/img/Rectangle 248.png";
+} from "/src/assets/variablesJs/Animations.js";
 import ContatcButton from "../../components/ContactButton/ContatcButton";
 import Container from "../../components/Container/Container";
+import ListText from "../../components/ListText/ListText";
+import { text } from "/src/assets/variablesJs/atuationText.js";
 
 const jobDescriptionUm = [
   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod necessitatibus commodi quia ex. Quae illum quibusdam voluptate ducimus quaerat consequatur sunt est suscipit, aspernatur tempore rerum qui, cum error dolorem!",
@@ -27,13 +28,16 @@ const AreasDeAtuacao = () => {
         <JobDescription
           animationText={fromLeftVariant}
           animationImg={fromRightVariant}
-          span="Texto descritivo"
-          title="Direito Civil"
-          paragraphs={jobDescriptionUm}
-          mainClass="jobDescription"
-          imgSrc={imgUm}
-          imgAlt="img teste"
-        ></JobDescription>
+          span="Cível"
+          title="Direito Cível"
+          paragraphs={text.empresarial.paragraph}
+          mainClass="jobDescription listText"
+        >
+          <ListText
+            listLeft={text.empresarial.listLeft}
+            listRight={text.empresarial.listRight}
+          />
+        </JobDescription>
       </Container>
 
       <Container containerBg="bgCinza">
@@ -44,8 +48,6 @@ const AreasDeAtuacao = () => {
           title="Direito Civil"
           paragraphs={jobDescriptionUm}
           mainClass="reverse"
-          imgSrc={imgUm}
-          imgAlt="img teste"
         ></JobDescription>
       </Container>
 
@@ -57,8 +59,6 @@ const AreasDeAtuacao = () => {
           title="Direito Civil"
           paragraphs={jobDescriptionUm}
           mainClass="jobDescription"
-          imgSrc={imgUm}
-          imgAlt="img teste"
         >
           <ContatcButton
             textButton={"Agendar um horário"}

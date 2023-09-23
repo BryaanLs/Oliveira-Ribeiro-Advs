@@ -27,17 +27,20 @@ const JobDescription = ({
             {children}
           </BoxAnimation>
         </div>
-        <BoxAnimation animacao={animationImg}>
-          <div className="zoomImg">
-            <img
-              src={imgSrc}
-              alt={imgAlt}
-              loading="lazy"
-              width="350"
-              height="267"
-            />
-          </div>
-        </BoxAnimation>
+
+        {imgSrc && (
+          <BoxAnimation animacao={animationImg}>
+            <div className="zoomImg">
+              <img
+                src={imgSrc}
+                alt={imgAlt}
+                loading="lazy"
+                width="350"
+                height="267"
+              />
+            </div>
+          </BoxAnimation>
+        )}
       </div>
     </>
   );

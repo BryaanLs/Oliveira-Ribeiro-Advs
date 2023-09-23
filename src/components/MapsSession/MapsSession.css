@@ -3,7 +3,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center bottom;
-  /* margin: 0 !important; */
   background-attachment: fixed;
   color: #fff;
 }
@@ -58,6 +57,11 @@
   height: 300px;
 }
 
+.maps-content li {
+  border-bottom: 2px solid var(--corDestaque);
+  margin-bottom: 2rem;
+}
+
 @media (max-width: 1070px) {
   .maps-content {
     flex-direction: column;
@@ -94,10 +98,6 @@
     left: 0;
     margin-right: 1rem;
     margin-bottom: 1.5rem;
-  }
-
-  .maps-content li {
-    border-bottom: 2px solid var(--corDestaque);
   }
 
   .maps {

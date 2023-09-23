@@ -3,7 +3,10 @@ import "./Socios.css";
 import Container from "../../components/Container/Container";
 import ContainerPicture from "../../components/ContainerPicture/ContainerPicture";
 import imgUm from "../../assets/img/nossoEscritorioHomi.png";
-import { fromLeftVariant, fromRightVariant } from "../../components/Animations";
+import {
+  fromLeftVariant,
+  fromRightVariant,
+} from "/src/assets/variablesJs/Animations.js";
 import casinha from "../../assets/img/casinhaIcone.svg";
 import pessoas from "../../assets/img/pessoasIcone.svg";
 import caixa from "../../assets/img/caixaIcone.svg";

@@ -11,7 +11,7 @@ import {
   fromBottomVariant,
   fromLeftVariant,
   fromRightVariant,
-} from "../../components/Animations";
+} from "/src/assets/variablesJs/Animations.js";
 import ContainerPicture from "../../components/ContainerPicture/ContainerPicture";
 import imgUm from "../../assets/img/nossoEscritorioHomi.png";
 

@@ -14,7 +14,7 @@ import {
   fromRightVariant,
   fromLeftVariant,
   fromBottomWithBlurVariant,
-} from "/src/components/Animations.js";
+} from "/src/assets/variablesJs/Animations.js";
 import Container from "../../components/Container/Container";
 
 import calendar from "../../assets/img/calendario.svg";

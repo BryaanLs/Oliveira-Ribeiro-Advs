@@ -4,7 +4,17 @@
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
-  backdrop-filter: blur(90%);
+  position: relative;
+  z-index: 1;
+}
+
+.atuacao::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(0.3rem);
+  position: absolute;
+  z-index: -1;
 }
 
 .bgFinalAtuacao {
@@ -35,6 +45,8 @@
   min-width: 50%;
   max-width: 50%;
 }
+
+
 
 @media (max-width: 1070px) {
   .bgFinalAtuacao .main-content p {

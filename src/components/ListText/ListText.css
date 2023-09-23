@@ -1,0 +1,44 @@
+.jobDescription.listText {
+  padding-left: 0 !important;
+  max-width: 100rem;
+}
+
+.jobDescription.listText h2,
+.jobDescription.listText p,
+.jobDescription.listText span {
+  margin-left: 0;
+}
+
+.listText {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  justify-content: space-between;
+}
+
+.listText ul {
+  margin-top: 3rem;
+  font-weight: bold;
+}
+
+.listText ul li {
+  position: relative;
+  margin-left: 2rem;
+  width: max-content;
+}
+.listText ul li::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  background-color: var(--corDestaque);
+  position: absolute;
+  left: -20px;
+  border-radius: 50%;
+  top: 10px;
+}
+
+.listLeft {
+  color: black;
+  height: max-content;
+  width: 100%;
+}
