@@ -39,7 +39,7 @@
   padding: 1rem 3rem;
   color: #fff;
   text-transform: uppercase;
-  background-color: var(--corSecundariaSegundoTom);
+  background-color: var(--corSecundariaTerceiroTom);
   border-radius: var(--borderRadius);
 }
 
@@ -65,7 +65,7 @@ a.active::after {
   content: "";
   width: 3px;
   height: 0;
-  background-color: var(--corSecundariaSegundoTom);
+  background-color: var(--corDestaque);
   position: absolute;
   left: 5px;
   top: 15px;
@@ -81,7 +81,7 @@ a.active::after {
 
 a.active {
   transition: all 0.5s ease-in-out;
-  color: var(--corSecundariaSegundoTom);
+  color: var(--corDestaque);
 }
 a.active::after {
   opacity: 1;

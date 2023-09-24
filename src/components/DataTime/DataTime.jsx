@@ -19,6 +19,7 @@ const DataTime = () => {
   return (
     <div className="containerSaudation">
       <p className="timeSaudation">{greeting}, Seja Bem-vindo(a)!</p>
+      <h2>Nosso escritório está localizado no Itaim-bibi, São Paulo!</h2>
     </div>
   );
 };

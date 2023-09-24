@@ -1,24 +1,36 @@
-.jobDescription.listText {
-  padding-left: 0 !important;
+.jobDescription.listTextConfig {
+  padding-left: 0;
+  padding: 3rem;
   max-width: 100rem;
 }
 
-.jobDescription.listText h2,
-.jobDescription.listText p,
-.jobDescription.listText span {
+.jobDescription.listTextConfig h2,
+.jobDescription.listTextConfig p,
+.jobDescription.listTextConfig span {
   margin-left: 0;
+}
+
+.listTextConfig .contactButton {
+  margin-left: 0;
+  margin-top: 2rem;
 }
 
 .listText {
   width: 100%;
   height: max-content;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  margin-top: 3rem;
+  grid-template-columns: 1fr 1fr;
+  justify-items: end;
+}
+
+.listText li {
+  color: var(--corPrimariaSegundoTom);
 }
 
 .listText ul {
-  margin-top: 3rem;
   font-weight: bold;
+  width: 100%;
 }
 
 .listText ul li {
@@ -37,8 +49,28 @@
   top: 10px;
 }
 
-.listLeft {
-  color: black;
+.listLeft,
+.listRight {
   height: max-content;
   width: 100%;
+}
+
+@media (max-width: 850px) {
+  .listText {
+    grid-template-columns: 1fr;
+  }
+
+  .listText ul {
+    width: 100%;
+  }
+
+  .listText ul li {
+    margin-top: 0.3rem;
+    font-size: 1.4rem;
+  }
+
+  .jobDescription.listTextConfig {
+    padding: 0;
+    max-width: 120rem;
+  }
 }

@@ -33,7 +33,13 @@ const ContainerPicture = ({
         </div>
       </BoxAnimation>
       <BoxAnimation animacao={animacaoDois}>
-        <img src={srcImg} alt={altImg} width={300} height={450} />
+        <img
+          src={srcImg}
+          alt={altImg}
+          width={300}
+          height={450}
+          loading="lazy"
+        />
       </BoxAnimation>
     </div>
   );

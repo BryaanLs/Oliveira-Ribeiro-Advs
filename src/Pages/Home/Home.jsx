@@ -6,7 +6,7 @@ import JobDescription from "../../components/JobDescription/JobDescription";
 import DCivil from "/src/assets/img/Dcivil.webp";
 import Dempresarial from "/src/assets/img/Dempresarial.webp";
 import DImobiliario from "/src/assets/img/DImobiliario.webp";
-import imgDois from "/src/assets/img/homenzinho.png";
+import drGabrielHome from "/src/assets/img/drGabrielHome.webp";
 import ContatcButton from "../../components/ContactButton/ContatcButton";
 import MapsSession from "../../components/MapsSession/MapsSession";
 import BoxAnimation from "../../components/BoxAnimation/BoxAnimation";
@@ -16,7 +16,6 @@ import {
   fromBottomWithBlurVariant,
 } from "/src/assets/variablesJs/Animations.js";
 import Container from "../../components/Container/Container";
-
 import calendar from "../../assets/img/calendario.svg";
 import excelencia from "../../assets/img/excelencia.svg";
 import maoVerificado from "../../assets/img/maoVerificado.svg";
@@ -24,6 +23,7 @@ import verificado from "../../assets/img/verificado.svg";
 import imgLocalizacao from "../../assets/img/localização.svg";
 import imgCelular from "../../assets/img/celular.svg";
 import imgEmail from "../../assets/img/email.svg";
+import { NavLink } from "react-router-dom";
 
 const txtDcivil = [
   "O Direito Civil é uma das principais áreas do direito no Brasil, pois carrega as bases para a convivência em sociedade em todos os âmbitos da vida.",
@@ -173,18 +173,27 @@ const Home = () => {
 
       <Container containerBg="bgFinalHome">
         <div className="aboutMe main-content">
-          <BoxAnimation animacao={fromLeftVariant}>
-            <div className="aboutMe-text">
-              <h2>Conheça o Dr. Gabriel Oliveira</h2>
-              <p>
-                Graduado em Direito pela Universidade de São Paulo, o Dr.
-                Gabriel atual na área do Direito há mais de 10 anos.
-              </p>
-            </div>
-          </BoxAnimation>
           <BoxAnimation animacao={fromRightVariant}>
-            <img src={imgDois} alt="" />
+            <img
+              src={drGabrielHome}
+              width="269"
+              height="336"
+              loading="lazy"
+              alt="foto do Dr.Gabriel"
+            />
           </BoxAnimation>
+          <div className="aboutMe-text">
+            <h2>Dr. Gabriel Oliveira Ribeiro</h2>
+            <p>
+              Graduado em Direito pela Universidade de São Paulo, o Dr. Gabriel
+              atual na áreas do Direito Civil, Familiar e Empresarial e
+              Empresarial há mais de 6 anos.
+            </p>
+          </div>
+
+          <NavLink to="Nosso-Escritório">
+            Veja mais sobre nosso escritório
+          </NavLink>
         </div>
       </Container>
     </>

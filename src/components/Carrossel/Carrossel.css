@@ -17,14 +17,14 @@
 }
 
 .swiper-pagination-bullet-active {
-  background-color: var(--corSecundaria);
+  background-color: var(--corDestaque);
   border: 1px solid var(--corSecundaria);
   width: 15px;
   height: 15px;
 }
 .swiper-button-next::after,
 .swiper-button-prev::after {
-  color: #ffffff;
+  color: #fff;
   transform: scale(150%);
 }
 
@@ -41,6 +41,7 @@
   object-fit: cover;
   object-position: 50%;
   filter: saturate(200%) brightness(60%);
+  -webkit-filter:  saturate(200%) brightness(60%);
 }
 
 @media (max-width: 1400px) {

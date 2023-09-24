@@ -4,15 +4,14 @@
   color: #fff;
   font-weight: bold;
   padding: 1rem 2rem;
-  background-color: var(--corSecundaria);
+  background-color: var(--corSecundariaTerceiroTom);
   border-radius: 10px;
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.266);
-  transition: box-shadow 0.3s ease-in-out, transform 0.5s, filter 0.3s,
+  box-shadow: 0 0 0px #00000073;
+  transition: box-shadow 0.3s, transform 0.3s, filter 0.3s,
     background 0.3s ease-in-out;
 }
 
 .contactButton:hover {
-  box-shadow: none;
-  transform: translateY(10px);
-  background-color: var(--corSecundariaSegundoTom);
+  transform: translate(5px, -5px);
+  box-shadow: -10px 10px 5px #00000073;
 }

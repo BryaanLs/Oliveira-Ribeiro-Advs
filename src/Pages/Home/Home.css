@@ -1,9 +1,12 @@
 .bgFinalHome {
-  background-image: url(/src/assets/img/AdvogadosDoEscritorio.webp) !important;
+  background-image: url(/src/assets/img/bgFinalHome.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   color: #fff;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
 }
 
 .home.container {
@@ -31,6 +34,24 @@
   display: flex;
   align-items: center;
   gap: 6rem;
+  padding: 3rem;
+  height: max-content;
+  position: relative;
+  z-index: 1;
+}
+
+.aboutMe::before {
+  content: "";
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 3rem;
+  background-color: var(--corPrimariaBlur);
+  backdrop-filter: blur(0.5rem);
+  -webkit-backdrop-filter: blur(0.5rem);
+  position: absolute;
+  z-index: -1;
 }
 
 .aboutMe p {
@@ -38,6 +59,20 @@
   font-size: 1.8rem;
   color: var(--cinzaLetras);
   font-family: var(--fonteParagrafo);
+}
+
+.aboutMe a {
+  color: var(--corDestaque);
+  font-weight: bold;
+  text-decoration: underline;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  transition: color 0.2s ease-in-out;
+}
+
+.aboutMe a:hover {
+  color: #fff;
 }
 
 .valores {
@@ -55,7 +90,6 @@
 .valores ul {
   margin-top: 2rem;
   display: flex;
-
   gap: 5rem;
   text-align: center;
 }
@@ -149,6 +183,22 @@
   .bgFinalHome {
     background-position: 60%;
     background-attachment: scroll;
+  }
+
+  .aboutMe img {
+    width: 200px;
+    height: auto;
+  }
+
+  .aboutMe h2 {
+    font-size: 3rem;
+  }
+  .aboutMe p {
+    font-size: 1.4rem;
+  }
+
+  .aboutMe a {
+    font-size: 1rem;
   }
 }
 

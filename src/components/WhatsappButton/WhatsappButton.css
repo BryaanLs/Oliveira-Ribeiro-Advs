@@ -9,9 +9,6 @@
   color: #fff;
 }
 
-/* 
-transform: translateY(-200%); */
-
 .openedBox {
   animation: abriuBox 1s both;
 }
@@ -24,42 +21,8 @@ transform: translateY(-200%); */
   animation: conteudoBox 1s both;
 }
 
-@keyframes abriuBox {
-  from {
-    transform: translateY(200%);
-  }
-
-  to {
-    transform: translateY(0%);
-  }
-}
-
-@keyframes fechouBox {
-  from {
-    transform: translateY(200%);
-    opacity: 0;
-    width: 220px;
-  }
-
-  to {
-    transform: translateY(0%);
-
-    opacity: 1;
-    height: 45px;
-    width: 220px;
-  }
-}
-
-@keyframes conteudoBox {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 .closedBox {
-  background-color: var(--corSecundaria);
+  background-color: var(--corSecundariaTerceiroTom);
   text-align: center;
   padding: 1rem 3rem;
   border-radius: 2rem;
@@ -78,6 +41,7 @@ transform: translateY(-200%); */
 
 .openBoxBtn {
   cursor: pointer;
+  /* font-weight: bold; */
 }
 
 .closeChatBtn {
@@ -164,6 +128,9 @@ transform: translateY(-200%); */
   /* width: 30px; */
   /* height: 30px; */
 }
+.closeChatAnimation {
+  animation: closeChat 1s ease-in-out both;
+}
 
 @keyframes closeChat {
   from {
@@ -174,8 +141,39 @@ transform: translateY(-200%); */
   }
 }
 
-.closeChatAnimation {
-  animation: closeChat 1s ease-in-out both;
+@keyframes abriuBox {
+  from {
+    transform: translateY(200%);
+  }
+
+  to {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes fechouBox {
+  from {
+    transform: translateY(200%);
+    opacity: 0;
+    width: 220px;
+  }
+
+  to {
+    transform: translateY(0%);
+
+    opacity: 1;
+    height: 45px;
+    width: 220px;
+  }
+}
+
+@keyframes conteudoBox {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @media (max-width: 900px) {

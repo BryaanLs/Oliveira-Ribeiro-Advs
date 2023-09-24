@@ -10,11 +10,6 @@ import Container from "../../components/Container/Container";
 import ListText from "../../components/ListText/ListText";
 import { text } from "/src/assets/variablesJs/atuationText.js";
 
-const jobDescriptionUm = [
-  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod necessitatibus commodi quia ex. Quae illum quibusdam voluptate ducimus quaerat consequatur sunt est suscipit, aspernatur tempore rerum qui, cum error dolorem!",
-  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod necessitatibus commodi quia ex. Quae illum quibusdam voluptate ducimus quaerat consequatur sunt est suscipit, aspernatur tempore rerum qui, cum error dolorem!",
-];
-
 const AreasDeAtuacao = () => {
   return (
     <>
@@ -28,10 +23,10 @@ const AreasDeAtuacao = () => {
         <JobDescription
           animationText={fromLeftVariant}
           animationImg={fromRightVariant}
-          span="Cível"
-          title="Direito Cível"
+          span="Empresarial"
+          title="Direito Empresarial"
           paragraphs={text.empresarial.paragraph}
-          mainClass="jobDescription listText"
+          mainClass="jobDescription listTextConfig"
         >
           <ListText
             listLeft={text.empresarial.listLeft}
@@ -44,22 +39,31 @@ const AreasDeAtuacao = () => {
         <JobDescription
           animationText={fromRightVariant}
           animationImg={fromLeftVariant}
-          span="Texto descritivo"
-          title="Direito Civil"
-          paragraphs={jobDescriptionUm}
-          mainClass="reverse"
-        ></JobDescription>
+          span="Imobiliário"
+          title="Direito Imobiliário"
+          paragraphs={text.imobiliario.paragraph}
+          mainClass="jobDescription listTextConfig"
+        >
+          <ListText
+            listLeft={text.imobiliario.listLeft}
+            listRight={text.imobiliario.listRight}
+          />
+        </JobDescription>
       </Container>
 
       <Container>
         <JobDescription
           animationText={fromLeftVariant}
           animationImg={fromRightVariant}
-          span="Texto descritivo"
-          title="Direito Civil"
-          paragraphs={jobDescriptionUm}
-          mainClass="jobDescription"
+          span="Cível"
+          title="Direito Cível"
+          paragraphs={text.imobiliario.paragraph}
+          mainClass="jobDescription listTextConfig"
         >
+          <ListText
+            listLeft={text.civel.listLeft}
+            listRight={text.civel.listRight}
+          />
           <ContatcButton
             textButton={"Agendar um horário"}
             linkButton={"#"}

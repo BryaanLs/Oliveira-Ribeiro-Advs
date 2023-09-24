@@ -20,15 +20,45 @@
 .socios ul li {
   display: flex;
   align-items: center;
-  gap: 2rem;
-  padding: 0.5rem 0;
+  margin-top: 2rem;
   font-weight: bold;
   color: var(--corPrimariaSegundoTom);
+  position: relative;
+  padding-left: 5rem;
 }
 
 .socios ul li img {
-  box-shadow: none;
   border-radius: 0;
+  position: absolute;
+  left: 0;
+}
+
+.itaimBibi {
+  background-image: url(/src/assets/img/carrossel1.webp);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 70vh;
+  position: relative;
+  z-index: 1;
+}
+
+.itaimBibi::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  backdrop-filter: brightness(40%) saturate(2);
+}
+
+.itaimBibi p {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  color: #fff;
+  font-weight: bold;
 }
 
 @media (max-width: 1070px) {
@@ -41,7 +71,20 @@
     flex-direction: column;
   }
 
+  .socios ul li img {
+    border-radius: 0;
+    position: absolute;
+    left: 0;
+    top: -55px;
+  }
+
   .socios ul {
     margin-top: 3rem;
+  }
+
+  .itaimBibi p {
+    font-size: 1.2rem;
+    right: 0;
+    text-align: center;
   }
 }

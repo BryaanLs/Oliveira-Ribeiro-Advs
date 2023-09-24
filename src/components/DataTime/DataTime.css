@@ -10,12 +10,13 @@
   justify-content: center;
 }
 
+.containerSaudation h2 {
+  text-align: left !important;
+}
 .containerSaudation p {
   color: #fff !important;
   font-size: 1.6rem;
   width: 100%;
-  padding: 1rem;
-  border-radius: 1rem;
 }
 
 .containerSaudation .timeSaudation {

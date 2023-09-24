@@ -13,7 +13,11 @@ import {
   fromRightVariant,
 } from "/src/assets/variablesJs/Animations.js";
 import ContainerPicture from "../../components/ContainerPicture/ContainerPicture";
-import imgUm from "../../assets/img/nossoEscritorioHomi.png";
+import drGabriel from "../../assets/img/drgabrielbigscale.webp";
+import officeVertical from "../../assets/img/officevertical.webp";
+import { NavLink } from "react-router-dom";
+import officeLeft from "/src/assets/img/officeleft.webp";
+import officeRight from "/src/assets/img/officeright.webp";
 
 const NossoEscritorio = () => {
   return (
@@ -39,12 +43,9 @@ const NossoEscritorio = () => {
         </BoxAnimation>
       </Container>
 
-      <Container containerBg="bgTwoOurOffice">
-        <div className="main-content">
-          <BoxAnimation animacao={fromBottomVariant}>
-            <h1>Lorem ipsum dolor</h1>
-          </BoxAnimation>
-        </div>
+      <Container containerBg="twoPics">
+        <img src={officeLeft} width="678" height="494" alt="" />
+        <img src={officeRight} width="678" height="494" alt="" />
       </Container>
 
       <Container>
@@ -54,8 +55,8 @@ const NossoEscritorio = () => {
           p2="
           (Estatuto da OAB, art. 31)."
           p3="Dr. Gabriel Oliveira"
-          span="OAB 12.345 SP"
-          srcImg={imgUm}
+          span="OAB 449575/SP"
+          srcImg={drGabriel}
           animacaoUm={fromLeftVariant}
           animacaoDois={fromRightVariant}
           addClass="normal"
@@ -64,17 +65,21 @@ const NossoEscritorio = () => {
 
       <Container>
         <ContainerPicture
-          title="Ética, transparência e respeito."
-          p1="O advogado deve proceder de forma que o torne merecedor de respeito e que contribua para o prestígio da classe e da advocacia."
-          p2="
-          (Estatuto da OAB, art. 31)."
-          p3="Dr. Gabriel Oliveira"
-          span="OAB 12.345 SP"
-          srcImg={imgUm}
+          title="Veja mais sobre nossas áreas de atuação"
+          srcImg={officeVertical}
           animacaoUm={fromRightVariant}
           animacaoDois={fromLeftVariant}
           addClass="reversePic"
-        ></ContainerPicture>
+        >
+          <div className="atuacoes">
+            <ul>
+              <li>Direito Cível</li>
+              <li>Direto Empresarial</li>
+              <li>Direito Imobiliário</li>
+            </ul>
+          </div>
+          <NavLink to="Áreas-de-atuação">Ir para Áreas de Atuação</NavLink>
+        </ContainerPicture>
       </Container>
     </>
   );

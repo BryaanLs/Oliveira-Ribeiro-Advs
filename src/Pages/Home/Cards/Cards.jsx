@@ -5,6 +5,7 @@ import marteloSVG from "/src/assets/img/martelinho.svg";
 import pessoaSVG from "/src/assets/img/pessoaEPapel.svg";
 import BoxAnimation from "../../../components/BoxAnimation/BoxAnimation";
 import DataTime from "../../../components/DataTime/DataTime";
+import { NavLink } from "react-router-dom";
 
 // eslint-disable-next-line react/prop-types
 const Cards = ({ animationText }) => {
@@ -14,24 +15,31 @@ const Cards = ({ animationText }) => {
         <div className="card">
           <div className="saudation">
             <DataTime />
-            <h2>Nosso escritório está localizado no Itaim-bibi, São Paulo!</h2>
           </div>
-          {/* <DataTime /> */}
-          <img src={pessoaSVG} alt="icone de uma pessoa e um papel" />
-          <h2>Atendimento presencial</h2>
-          <p>OAB n° 12.345/SP</p>
+          <img
+            src={pessoaSVG}
+            alt="icone de uma pessoa e um papel"
+            width="50"
+            height="50"
+          />
+          <h2>Solidariedade, Ética e Lealdade.</h2>
         </div>
 
         <div className="card">
-          <img src={livroSVG} alt="" />
-          <h2>Dr. Gabriel Oliveira</h2>
-          <p>OAB n° 12.345/SP</p>
+          <img src={livroSVG} alt="icone de um livro" width="50" height="50" />
+          <h2>Dr. Gabriel Oliveira Ribeiro</h2>
+          <p>OAB n° 449575/SP</p>
+          <NavLink to="Nosso-escritório">Conheça mais</NavLink>
         </div>
 
         <div className="card">
-          <img src={marteloSVG} alt="" />
-          <h2>Direito da Família</h2>
-          <p>Há 10 anos atuando em casos de Direito da Família</p>
+          <img
+            src={marteloSVG}
+            alt="icone de um martelo batendo"
+            width="50"
+            height="50"
+          />
+          <h2>Direito Cível, Direito Empresarial e Direito Familiar </h2>
         </div>
       </div>
       <div className="cards-description main-content">

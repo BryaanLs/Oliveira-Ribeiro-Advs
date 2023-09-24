@@ -2,7 +2,7 @@ import React from "react";
 import "./Socios.css";
 import Container from "../../components/Container/Container";
 import ContainerPicture from "../../components/ContainerPicture/ContainerPicture";
-import imgUm from "../../assets/img/nossoEscritorioHomi.png";
+import drgabrielbigscale from "../../assets/img/drgabrielbigscale.webp";
 import {
   fromLeftVariant,
   fromRightVariant,
@@ -27,7 +27,7 @@ const Socios = () => {
           p1="O advogado deve proceder de forma que o torne merecedor de respeito e que contribua para o prestígio da classe e da advocacia."
           p2="
           (Estatuto da OAB, art. 31)."
-          srcImg={imgUm}
+          srcImg={drgabrielbigscale}
           animacaoUm={fromLeftVariant}
           animacaoDois={fromRightVariant}
           addClass="socios"
@@ -65,6 +65,13 @@ const Socios = () => {
             </li>
           </ul>
         </ContainerPicture>
+      </Container>
+
+      <Container containerBg="itaimBibi">
+        <p>
+          Avenida São Gabriel, nº 149, Conjunto 1004, CEP: 01435-001, Itaim
+          Bibi, São Paulo/SP
+        </p>
       </Container>
     </>
   );
