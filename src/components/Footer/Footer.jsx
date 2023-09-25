@@ -16,7 +16,12 @@ const Footer = () => {
       <footer className="container">
         <div className="nav main-content">
           <div className="logoRodape">
-            <img src={logo} alt="logo da oliveira ribeiro advs" />
+            <img
+              src={logo}
+              alt="logo da oliveira ribeiro advs"
+              width="160px"
+              height="129px"
+            />
           </div>
 
           <div className="nav-navlink">

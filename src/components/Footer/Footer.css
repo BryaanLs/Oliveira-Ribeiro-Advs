@@ -234,6 +234,17 @@ footer.container {
     margin-left: 1.2rem;
   }
 
+  .nav-navlink ul li a {
+    height: 48px;
+    min-width: 48px;
+  }
+
+  .nav-navlink .active::before {
+    top: 2px;
+    height: 30px;
+    border-radius: 1rem;
+  }
+
   .nav h3 {
     right: 0;
   }
