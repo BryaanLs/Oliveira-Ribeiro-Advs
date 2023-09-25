@@ -70,6 +70,7 @@ const MapsSession = ({
             allowfullscreen="true"
             referrerPolicy="no-referrer-when-downgrade"
             loading="lazy"
+            title="endereço do escritório"
           ></iframe>
         </div>
       </div>

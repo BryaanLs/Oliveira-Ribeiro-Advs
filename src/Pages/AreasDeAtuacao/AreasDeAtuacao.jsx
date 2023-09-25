@@ -66,7 +66,7 @@ const AreasDeAtuacao = () => {
           />
           <ContatcButton
             textButton={"Agendar um horário"}
-            linkButton={"#"}
+            linkButton="https://api.whatsapp.com/send?phone=+5511975950351&text=Olá, gostaria de tirar algumas dúvidas!"
             target="_blank"
           />
         </JobDescription>

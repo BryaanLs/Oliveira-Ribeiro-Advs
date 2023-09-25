@@ -38,7 +38,11 @@ const NossoEscritorio = () => {
             imgCelular={imgCelular}
             imgEmail={imgEmail}
           >
-            <ContactButton textButton="Enviar Mensagem" />
+            <ContactButton
+              textButton="Enviar Mensagem"
+              linkButton="https://api.whatsapp.com/send?phone=+5511975950351&text=Olá, gostaria de tirar algumas dúvidas!"
+              target="_blank"
+            />
           </MapsSession>
         </BoxAnimation>
       </Container>

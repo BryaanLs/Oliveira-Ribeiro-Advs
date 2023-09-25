@@ -24,21 +24,7 @@ import imgLocalizacao from "../../assets/img/localização.svg";
 import imgCelular from "../../assets/img/celular.svg";
 import imgEmail from "../../assets/img/email.svg";
 import { NavLink } from "react-router-dom";
-
-const txtDcivil = [
-  "O Direito Civil é uma das principais áreas do direito no Brasil, pois carrega as bases para a convivência em sociedade em todos os âmbitos da vida.",
-  "O Direito Civil é regido pelo Código Civil, que, por sua vez, norteia todas as relações em sociedade. Desse modo, ele abrange 100% da população e permeia todas as relações, de divórcios a contratos de compra e venda, heranças etc.",
-];
-
-const txtDempresarial = [
-  "O Direito Empresarial é uma área do direito privado responsável por tratar relações de interesses das empresas e empreendedores.",
-  "O direito privado aborda os direitos particulares, ou seja, as relações entre as partes e suas vidas privadas. Seu principal objetivo é regularizar a vida em sociedade, defendendo a ordem e definindo os direitos e as obrigações dos indivíduos.",
-];
-
-const txtDfamiliar = [
-  "O Direito de Família trata de assuntos que afetam, direta ou indiretamente, a vida de todos.",
-  "Temas como casamento, união estável, divórcio, alimentos, guarda de filhos, partilha de bens e direito de visita são experiências vivenciadas por grande parte da população.",
-];
+import { text } from "../../assets/variablesJs/homeText";
 
 const Home = () => {
   return (
@@ -57,7 +43,7 @@ const Home = () => {
           animationImg={fromRightVariant}
           span="Sociedade"
           title="Direito Civil"
-          paragraphs={txtDcivil}
+          paragraphs={text.Dcivil}
           mainClass="jobDescription"
           imgSrc={DCivil}
           imgAlt="Imagem com uma população"
@@ -70,7 +56,7 @@ const Home = () => {
           animationImg={fromLeftVariant}
           span="Empresas & Empreendedores"
           title="Direito Empresarial"
-          paragraphs={txtDempresarial}
+          paragraphs={text.Dempresarial}
           mainClass="reverse"
           imgSrc={Dempresarial}
           imgAlt="imagem com um escritório"
@@ -83,14 +69,14 @@ const Home = () => {
           animationImg={fromRightVariant}
           span="Imóvel"
           title="Direito Imobiliário"
-          paragraphs={txtDfamiliar}
+          paragraphs={text.Dimobiliario}
           mainClass="jobDescription"
           imgSrc={DImobiliario}
           imgAlt="imagem com uma casa em um fim de tarde"
         >
           <ContatcButton
             textButton={"Agendar um horário"}
-            linkButton={"#"}
+            linkButton="https://api.whatsapp.com/send?phone=+5511975950351&text=Olá, gostaria de tirar algumas dúvidas!"
             target="_blank"
           />
         </JobDescription>

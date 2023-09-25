@@ -1,33 +1,20 @@
-/* eslint-disable react/prop-types */
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 
+// eslint-disable-next-line react/prop-types
 const BoxAnimation = ({ animacao, children }) => {
   const control = useAnimation();
   const [ref, inView] = useInView({
-    triggerOnce: true,
-    threshold: 0.3,
-    rootMargin: "0px 0px -50px 0px",
+    triggerOnce: true, // A animação será acionada apenas uma vez
+    threshold: 0.3, // Elemento é considerado visível quando 20% está na tela
+    rootMargin: "0px 0px -50px 0px", // Adiciona um "espaço invisível" acima do elemento
   });
 
   useEffect(() => {
     if (inView) {
       control.start("visible");
     }
-
-    // Adicione o ouvinte de evento de rolagem quando o componente é montado
-    const scrollListener = () => {
-      if (inView) {
-        control.start("visible");
-      }
-    };
-
-    window.addEventListener("scroll", scrollListener, { passive: true });
-
-    return () => {
-      window.removeEventListener("scroll", scrollListener);
-    };
   }, [control, inView]);
 
   return (

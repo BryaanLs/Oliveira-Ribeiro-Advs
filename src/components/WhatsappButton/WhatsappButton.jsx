@@ -32,7 +32,8 @@ const WhatsappButton = ({ boxWhats, setBoxWhats }) => {
     setMessage(target.value);
   }
 
-  function handleClick() {
+  function handleClick(zoom) {
+    zoom ? clearZoom() : restoreZoom();
     setBoxWhats((value) => !value);
     if (!boxWhats) {
       setMessage("Olá, gostaria de tirar algumas dúvidas!");
@@ -46,16 +47,44 @@ const WhatsappButton = ({ boxWhats, setBoxWhats }) => {
     setBoxWhats(null);
   }
 
+  function clearZoom() {
+    document
+      .querySelector('meta[name="viewport"]')
+      .setAttribute(
+        "content",
+        "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+      );
+  }
+
+  function restoreZoom() {
+    document
+      .querySelector('meta[name="viewport"]')
+      .setAttribute(
+        "content",
+        "width=device-width, initial-scale=1.0, maximum-scale=5.0"
+      );
+  }
+
   if (!boxWhats) {
     return (
-      <div className="closedBox fixedBox" onClick={handleClick}>
+      <div
+        className="closedBox fixedBox"
+        onClick={() => {
+          handleClick(true);
+        }}
+      >
         <p className="openBoxBtn">Entre em contato!</p>
       </div>
     );
   }
   return (
     <div className="openedBox fixedBox">
-      <button onClick={handleClick} className="closeChatBtn">
+      <button
+        onClick={() => {
+          handleClick(false);
+        }}
+        className="closeChatBtn"
+      >
         X
       </button>
       <div className="initMessage">

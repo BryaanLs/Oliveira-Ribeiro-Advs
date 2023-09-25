@@ -39,7 +39,7 @@ const Cards = ({ animationText }) => {
             width="50"
             height="50"
           />
-          <h2>Direito Cível, Direito Empresarial e Direito Familiar </h2>
+          <h2>Direito Cível, Direito Empresarial e Direito Imobiliário </h2>
         </div>
       </div>
       <div className="cards-description main-content">

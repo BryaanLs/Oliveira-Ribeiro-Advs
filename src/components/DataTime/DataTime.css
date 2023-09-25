@@ -3,7 +3,7 @@
   width: max-content;
   padding: 1rem;
   border-radius: 1rem;
-  left: -20px;
+  left: -10px;
   top: -50px;
   display: flex;
   flex-direction: column;
@@ -33,6 +33,5 @@
 
   .containerSaudation {
     top: -50px;
-    left: -20px;
   }
 }
