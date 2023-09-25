@@ -41,7 +41,7 @@
   object-fit: cover;
   object-position: 50%;
   filter: saturate(200%) brightness(60%);
-  -webkit-filter:  saturate(200%) brightness(60%);
+  -webkit-filter: saturate(200%) brightness(60%);
 }
 
 @media (max-width: 1400px) {
@@ -95,6 +95,15 @@
   .swiper-button-next::after,
   .swiper-button-prev::after {
     display: none;
+  }
+
+  .swiper-img {
+    display: inline-block;
+  }
+
+  .swiper-img img {
+    width: 100%;
+    height: 100%;
   }
 
   .slide-1 img {
