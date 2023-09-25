@@ -3,7 +3,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectFade, Pagination, Navigation } from "swiper/modules";
 import "swiper/css/bundle";
 import "./Carrossel.css";
-
+import carrossel3Mobile from "../../assets/img/carrossel3Mobile.webp";
+import carrossel2Mobile from "../../assets/img/carrossel2Mobile.webp";
+import carrossel1Mobile from "../../assets/img/carrossel1Mobile.webp";
 import escritorioUm from "../../assets/img/carrossel1.webp";
 import escritorioDois from "../../assets/img/carrossel2.webp";
 import escritorioTres from "../../assets/img/carrossel3.webp";
@@ -23,28 +25,49 @@ const Carrossel = () => {
         navigation={true}
       >
         <SwiperSlide className="swiper-img slide-1">
-          <img
-            src={escritorioTres}
-            alt="Foto do escritório"
-            width="1915"
-            height="917"
-          />
+          <picture>
+            <source
+              media="(max-width: 500px)"
+              srcSet={carrossel3Mobile}
+              type="image/webp"
+            />
+            <img
+              src={escritorioTres}
+              alt="Foto do escritório"
+              width="1915"
+              height="917"
+            />
+          </picture>
         </SwiperSlide>
         <SwiperSlide className="swiper-img slide-2">
-          <img
-            src={escritorioUm}
-            alt="Foto do escritório"
-            width="1915"
-            height="917"
-          />
+          <picture>
+            <source
+              media="(max-width: 500px)"
+              srcSet={carrossel1Mobile}
+              type="image/webp"
+            />
+            <img
+              src={escritorioUm}
+              alt="Foto do escritório"
+              width="1915"
+              height="917"
+            />
+          </picture>
         </SwiperSlide>
         <SwiperSlide className="swiper-img slide-3 slide-1">
-          <img
-            src={escritorioDois}
-            alt="Foto do escritório"
-            width="1915"
-            height="917"
-          />
+          <picture>
+            <source
+              media="(max-width: 500px)"
+              srcSet={carrossel2Mobile}
+              type="image/webp"
+            />
+            <img
+              src={escritorioDois}
+              alt="Foto do escritório"
+              width="1915"
+              height="917"
+            />
+          </picture>
         </SwiperSlide>
       </Swiper>
     </div>
