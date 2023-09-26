@@ -14,17 +14,6 @@ O desenvolvimento deste projeto é dividido em duas branches principais: `dev` e
 
 - **Master Branch:** A branch `master` contém a versão estável e aprovada do projeto. Quando um conjunto significativo de funcionalidades é completado na branch `dev` e passa por revisões e testes, essas mudanças são mescladas na branch `master`.
 
-## Como Contribuir
-
-Contribuições são bem-vindas! Se você deseja contribuir para este projeto, siga estas etapas:
-
-1. Faça um fork deste repositório para o seu próprio perfil.
-2. Crie uma branch a partir da branch `dev` com um nome descritivo para a sua funcionalidade ou correção: `git checkout -b nome-da-funcionalidade`.
-3. Faça suas alterações e testes.
-4. Certifique-se de manter um código limpo e seguir as convenções de estilo estabelecidas.
-5. Após concluir, crie um pull request direcionando à branch `dev` deste repositório.
-6. Seu pull request será revisado e discutido antes de ser mesclado.
-
 ## Configuração Local
 
 Caso deseje executar o projeto localmente, siga estas etapas:
