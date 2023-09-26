@@ -1,19 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&family=Rubik:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Rubik:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
-:root{
-  --corPrimaria: #0F1F2F;
-  --corPrimariaSegundoTom: #0B254B;
-  --corPrimariaTerceiroTom: #1E3956;
-  --corSecundaria: #CF9031;
-  --corSecundariaSegundoTom: #CAA25D;
-  --cinzaPadrao: #CECEC2;
-  --fonteTitulo: 'Rubik', sans-serif;
-  --fonteParagrafo: font-family: 'Poppins', sans-serif;
+:root {
+  --corPrimaria: #0f1f2f;
+  --corPrimariaSegundoTom: #0b254b;
+  --corPrimariaTerceiroTom: #1e3956;
+  --corPrimariaBlur: #111a2263;
+  --corSecundaria: #cf9031;
+  --corSecundariaSegundoTom: #caa25d;
+  --corSecundariaTerceiroTom: #905b00;
+  --corDestaque: #ffc226;
+  --cinzaPadrao: #cecec2;
+  --fonteTitulo: "Rubik", sans-serif;
+  --fonteParagrafo: "Poppins", sans-serif;
   --paddingSection: 3rem;
   --borderRadius: 10px;
+  --cinzaLetras: #9d9d9d;
+  --cinzaBg: #f9f9f9;
 }
 
-*{
+#root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: max-content;
+  overflow-x: hidden !important;
+}
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -21,63 +34,129 @@
   text-decoration: none;
 }
 
-html{
+html {
   font-size: 62.5%;
-  scroll-behavior: smooth;
-    overflow-x: hidden;
 }
 
-button{
+body {
+  animation: loadBody 1s ease-in-out forwards;
+}
+
+@keyframes loadBody {
+  from {
+    scroll-behavior: smooth;
+  }
+  to {
+    scroll-behavior: none;
+  }
+}
+
+button {
   background-color: transparent;
   border: none;
   cursor: pointer;
 }
 
-h1,h2,h3,h4{
+h1,
+h2,
+h3,
+h4 {
   font-family: var(--fonteTitulo);
 }
-h1{
+h1 {
   font-size: 4rem;
 }
-h2{
+h2 {
   font-size: 3.5rem;
 }
-h3{
+h3 {
   font-size: 3rem;
 }
-h4{
+h4 {
   font-size: 2.5rem;
 }
 
-a{
+a {
   cursor: pointer;
 }
 
-p,a,li,span{
+p,
+a,
+li,
+span {
   font-family: var(--fonteParagrafo);
   font-size: 1.6rem;
   color: #000;
 }
 
-.main-content{
+.main-content {
   max-width: 120rem;
   margin: 0 auto;
 }
 
-.container{
+.container {
   padding: var(--paddingSection);
   height: max-content;
+  min-width: 100%;
+  margin-top: 13rem;
+}
+
+.bgHero {
+  min-height: 70vh;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-body{
-  padding-top: 13rem;
+.bgHero .main-content {
+  width: 100%;
+  animation: heroAnimation 0.8s;
 }
 
-@media (max-width: 1070px){
-  body {
-    padding-top: 0;
+.bgHero h1 {
+  color: #fff;
+  text-align: center;
+}
+
+@keyframes heroAnimation {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
+::selection {
+  background-color: var(--corSecundaria);
+  color: #fff;
+}
 
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: var(--corPrimaria);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--corSecundaria);
+  border-radius: 2rem;
+}
+
+@media (max-width: 1070px) {
+  .container {
+    margin-top: 0;
+  }
+  .bgHero .main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .bgHero .main-content h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+}

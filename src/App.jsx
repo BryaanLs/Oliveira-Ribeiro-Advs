@@ -2,18 +2,36 @@
 import React from "react";
 import Header from "./components/Header/Header.jsx";
 import Home from "./Pages/Home/Home.jsx";
+import Footer from "./components/Footer/Footer.jsx";
+import AreasDeAtuacao from "./Pages/AreasDeAtuacao/AreasDeAtuacao.jsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import WhatsappButton from "./components/WhatsappButton/WhatsappButton.jsx";
+import NossoEscritorio from "./Pages/NossoEscritorio/NossoEscritorio.jsx";
+import ScrollToTop from "./components/ScrollToTop/ScrollToTop.jsx";
+import Socios from "./Pages/Socios/Socios.jsx";
 
 const App = () => {
+  const [boxWhats, setBoxWhats] = React.useState(false);
+
+  function handleClick() {
+    setBoxWhats(false);
+    alert("clicou");
+  }
   return (
-    <>
-    <BrowserRouter>
-      <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-      </Routes>
+    <div>
+      <BrowserRouter>
+        <Header setBoxWhats={setBoxWhats} />
+        <ScrollToTop />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="Áreas-de-atuação" element={<AreasDeAtuacao />} />
+          <Route path="Nosso-Escritório" element={<NossoEscritorio />} />
+          <Route path="Sócios" element={<Socios />} />
+        </Routes>
+        <Footer />
+        <WhatsappButton boxWhats={boxWhats} setBoxWhats={setBoxWhats} />
       </BrowserRouter>
-    </>
+    </div>
   );
 };
 

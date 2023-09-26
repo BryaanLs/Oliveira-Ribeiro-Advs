@@ -1,0 +1,117 @@
+.jobDescription,
+.reverse {
+  display: flex;
+  align-items: center;
+  gap: 20rem;
+  color: var(--corPrimaria);
+}
+.jobDescription span {
+  color: var(--corPrimaria);
+}
+.jobDescription p,
+.reverse p {
+  padding: 1rem 0;
+}
+
+.jobDescription span,
+.jobDescription h2,
+.jobDescription p {
+  margin-left: 5rem;
+}
+
+.jobDescription img,
+.reverse img {
+  transition: transform 0.5s ease-in-out, filter 0.5s ease-in-out;
+}
+.jobDescription img:hover {
+  transform: scale(120%) rotate(8deg);
+  filter: brightness(50%);
+}
+.jobDescription img:hover,
+.reverse img:hover {
+  transform: scale(120%) rotate(5deg);
+  filter: brightness(65%);
+}
+
+.jobDescription .zoomImg,
+.reverse .zoomImg {
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  border-radius: 1rem;
+  transition: box-shadow 0.5s ease-in-out;
+}
+
+.jobDescription .zoomImg:hover {
+  box-shadow: 0 0 10px rgba(126, 121, 121, 0.983);
+}
+
+.jobDescription .contactButton {
+  margin-left: 5rem;
+  position: relative;
+  top: 15px;
+}
+
+.bgCinza {
+  background-color: var(--cinzaBg);
+}
+
+.reverse {
+  flex-direction: row-reverse;
+  padding: 10rem 0;
+}
+
+.reverse span,
+.reverse h2,
+.reverse p {
+  margin-right: 5rem;
+}
+
+.reverse h2,
+.jobDescription h2 {
+  padding: 1rem 0;
+}
+
+.jobDescription img,
+.reverse img {
+  width: 350px;
+}
+
+@media (max-width: 1070px) {
+  .jobDescription span,
+  .jobDescription h2,
+  .jobDescription p,
+  .jobDescription img,
+  .jobDescription .contactButton {
+    margin-left: 0;
+  }
+  .jobDescription .contactButton {
+    display: flex;
+    justify-content: left;
+    margin: 3rem 0;
+  }
+  .jobDescription img,
+  .reverse img {
+    width: 100%;
+  }
+  .reverse span,
+  .reverse h2,
+  .reverse p,
+  .reverse img {
+    margin-right: 0;
+  }
+  .reverse h2,
+  .jobDescription h2 {
+    padding: 0.4rem 0;
+  }
+
+  .textContent {
+    margin-bottom: 5rem;
+  }
+  .jobDescription,
+  .reverse {
+    flex-direction: column;
+    gap: 0;
+    padding-bottom: 5rem;
+  }
+}

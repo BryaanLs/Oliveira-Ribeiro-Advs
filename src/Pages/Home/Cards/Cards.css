@@ -1,0 +1,237 @@
+.bgSecondSession {
+  background-image: url(/src/assets/img/bg-secondSession.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  margin: 0 !important;
+  position: relative;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+.cards {
+  display: flex;
+  position: relative;
+  top: -250px;
+  z-index: 20;
+}
+
+.cards p,
+.cards h2 {
+  color: var(--corPrimaria);
+  font-family: Rubik;
+  margin: 0.5rem 0;
+  text-align: center;
+}
+
+.cards h2 {
+  font-size: 2.5rem;
+}
+
+.cards p {
+  font-size: 1.8rem;
+}
+
+.card {
+  border-radius: 20px;
+  background: #f3f3f3;
+  box-shadow: 8px 5px 20px 2px rgba(61, 61, 61, 0.8);
+  margin: 0 1rem;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+}
+
+.card:nth-child(1),
+.card:nth-child(3) {
+  height: 270px;
+  position: relative;
+  top: 30px;
+}
+
+.card:nth-child(2) {
+  height: 350px;
+}
+
+.card img {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  top: -20px;
+}
+
+.card:nth-child(2) img {
+  position: relative;
+  top: -80px;
+}
+
+.card:nth-child(2) a {
+  position: absolute;
+  bottom: 30px;
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 1.8rem;
+  color: var(--corPrimariaSegundoTom);
+}
+
+.cards-description {
+  display: flex;
+  gap: 12rem;
+  position: relative;
+  bottom: 70px;
+}
+
+.cards-description p {
+  color: var(--cinzaLetras);
+  font-family: var(--fonteParagrafo);
+  font-size: 2.3rem;
+}
+
+.cards-description h2 {
+  border-left: 8px solid var(--corDestaque);
+  padding-left: 3rem;
+}
+
+.card {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s, transform 0.5s;
+  animation: card-animation 1s ease-in-out forwards;
+}
+
+.saudation {
+  width: max-content;
+  height: max-content;
+  display: flex;
+  position: absolute;
+  left: 0;
+  top: -300px;
+}
+
+.saudation h2 {
+  width: 500px;
+  height: max-content;
+  color: #fff;
+  font-size: 4rem;
+}
+@keyframes card-animation {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 1400px) {
+  .cards {
+    top: -140px;
+  }
+  .saudation {
+    top: -200px;
+  }
+
+  .card p {
+    font-size: 1.6rem;
+  }
+
+  .card:nth-child(1),
+  .card:nth-child(3) {
+    height: 210px;
+    position: relative;
+    top: 30px;
+  }
+
+  .card:nth-child(2) {
+    height: 260px;
+  }
+
+  .card:nth-child(2) img {
+    top: -50px;
+  }
+}
+
+@media (max-width: 1150px) {
+  .cards {
+    align-items: center;
+    text-align: center;
+  }
+  .saudation h2 {
+    font-size: 2.5rem;
+    width: 500px;
+  }
+  .saudation {
+    top: -130px;
+    text-align: left;
+  }
+
+  .card {
+    top: 0 !important;
+    margin: 2rem 0rem;
+    align-items: center;
+  }
+  .cards-description {
+    flex-direction: column;
+  }
+
+  .card:nth-child(1) {
+    position: relative;
+    right: -20px;
+  }
+  .card:nth-child(3) {
+    position: relative;
+    left: -20px;
+    z-index: -1;
+  }
+
+  .card p {
+    text-align: center;
+  }
+
+  .cards-description h2,
+  .cards-description p {
+    text-align: center;
+  }
+
+  .cards-description h2 {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .bgSecondSession {
+    background-attachment: scroll;
+  }
+}
+
+@media (max-width: 960px) {
+  .cards {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .card:nth-child(2) a {
+    bottom: 5px;
+  }
+
+  .card:nth-child(2) img {
+    top: -20px;
+  }
+  .card:nth-child(1),
+  .card:nth-child(2),
+  .card:nth-child(3) {
+    left: 0;
+    right: 0;
+    height: 220px;
+  }
+
+  .cards-description h2 {
+    padding-left: 0.5rem;
+  }
+
+  .saudation h2 {
+    font-size: 2.5rem;
+    width: 80vw;
+  }
+}

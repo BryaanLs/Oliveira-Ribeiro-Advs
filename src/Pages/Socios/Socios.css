@@ -1,0 +1,90 @@
+.bgHeroSocios {
+  background-image: url(../../assets/img/AdvogadosDoEscritorio.webp);
+  min-height: 70vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.bgHeroSocios h2 {
+  margin-top: 1rem;
+  padding-left: 1rem;
+  border-left: 5px solid var(--corDestaque);
+  color: var(--corDestaque);
+  font-size: 3rem;
+}
+
+.socios ul li {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  font-weight: bold;
+  color: var(--corPrimariaSegundoTom);
+  position: relative;
+  padding-left: 5rem;
+}
+
+.socios ul li img {
+  border-radius: 0;
+  position: absolute;
+  left: 0;
+}
+
+.itaimBibi {
+  background-image: url(/src/assets/img/carrossel1.webp);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 70vh;
+  position: relative;
+  z-index: 1;
+}
+
+.itaimBibi::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  backdrop-filter: brightness(40%) saturate(2);
+}
+
+.itaimBibi p {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  color: #fff;
+  font-weight: bold;
+}
+
+@media (max-width: 1070px) {
+  .bgHeroSocios {
+    text-align: center;
+  }
+
+  .socios {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .socios ul li img {
+    border-radius: 0;
+    position: absolute;
+    left: 0;
+    top: -55px;
+  }
+
+  .socios ul {
+    margin-top: 3rem;
+  }
+
+  .itaimBibi p {
+    font-size: 1.2rem;
+    right: 0;
+    text-align: center;
+  }
+}

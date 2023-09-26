@@ -1,0 +1,289 @@
+footer.container {
+  margin: 0;
+  padding: 5rem 3rem;
+  background-color: #0a121d;
+}
+
+.nav {
+  display: flex;
+  gap: 3rem;
+}
+
+.nav-navlink {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 80%;
+}
+
+.nav-navlink ul li a {
+  padding: 0.5rem 0;
+  display: block;
+  color: #fff;
+  width: max-content;
+  font-size: 1.3rem;
+}
+
+.nav-navlink ul li a:not(.active) {
+  text-decoration: underline;
+}
+
+.nav h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  position: relative;
+  right: 13px;
+  font-family: var(--fonteParagrafo);
+  color: #fff;
+  width: max-content;
+}
+
+.nav-navlink .active {
+  color: #fff;
+  font-weight: bold;
+  position: relative;
+  width: max-content;
+  font-size: 1.5rem;
+}
+
+.nav-navlink a:nth-child(1):not(.active)::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--corDestaque);
+  position: absolute;
+  left: -15px;
+  margin-top: 7px;
+}
+.nav-navlink .active::after {
+  text-decoration: none;
+  content: "(Ir ao topo)";
+  font-size: 1.1rem;
+  background-color: transparent;
+  font-weight: normal;
+  position: inherit;
+  top: 0;
+  left: 15px;
+  width: max-content;
+  height: max-content;
+}
+
+.nav-navlink .active::before {
+  content: "";
+  width: 5px;
+  height: 60%;
+  border-radius: 20%;
+  background-color: var(--corDestaque);
+  position: absolute;
+  left: -13px;
+  top: 19%;
+}
+
+.footerDescription {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: end;
+}
+
+.footerDescription h3,
+.footerDescription p {
+  font-size: 1rem;
+  left: 0;
+}
+
+.logoRodape {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoRodape img {
+  width: 160px;
+  margin-right: 5rem;
+}
+
+.adressContact {
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+
+.adressContact h3,
+.social h3 {
+  right: 0;
+}
+
+.adressContact p {
+  color: #fff;
+  font-size: 1.2rem;
+}
+.social {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.socialIcons {
+  display: flex;
+
+  width: max-content;
+  align-items: center;
+  gap: 2rem;
+}
+
+.socialIcons li a {
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #d9d9d9;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out,
+    background 0.2s ease-in-out;
+}
+
+.socialIcons li a:hover {
+  transform: translateY(2px);
+  box-shadow: 0 0 20px var(--corDestaque);
+  background-color: var(--corDestaque);
+}
+.socialIcons li a img {
+  transition: filter 0.2s ease-in-out;
+  padding: 1rem;
+  width: 100%;
+  height: 100%;
+}
+.socialIcons li a img:hover {
+  filter: brightness(0%) invert(100%);
+}
+
+.social a {
+  text-decoration: underline;
+  font-size: 1.3rem;
+  color: var(--corSecundariaSegundoTom);
+}
+
+.nextFusion {
+  background-color: #111e2f;
+  padding: 0 3rem;
+}
+
+.nextContent {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  justify-content: space-between;
+}
+
+.nextContent p {
+  color: #fff;
+  font-weight: 100;
+  font-size: 1.2rem;
+}
+
+.nextContent a {
+  color: var(--corDestaque);
+  margin-left: 1rem;
+  font-weight: bold;
+  transition: color 0.5s ease-in-out;
+  overflow: hidden;
+  position: relative;
+  font-size: 1.2rem;
+}
+
+.bgFooter {
+  background-image: url(/src/assets/img/bg-secondSession.webp);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.nextContent a:hover {
+  color: #fff;
+}
+
+@media (max-width: 1070px) {
+  .nav {
+    flex-direction: column;
+    gap: 4rem;
+    align-items: left;
+    justify-content: left;
+  }
+
+  .nav-navlink {
+    justify-content: start;
+    align-items: left;
+    width: max-content;
+  }
+
+  .nav-navlink a:nth-child(1):not(.active)::before {
+    left: -3px;
+  }
+
+  .nav-navlink h3 {
+    margin-bottom: 2rem;
+  }
+
+  .nav-navlink ul li {
+    margin-left: 1.2rem;
+  }
+
+  .nav-navlink ul li a {
+    height: 48px;
+    min-width: 48px;
+  }
+
+  .nav-navlink .active::before {
+    top: 2px;
+    height: 30px;
+    border-radius: 1rem;
+  }
+
+  .nav h3 {
+    right: 0;
+  }
+
+  .nextContent {
+    flex-direction: column;
+    text-align: center;
+    gap: 3rem;
+  }
+
+  .adressContact h3,
+  .social h3 {
+    padding-top: 2rem;
+    width: 100%;
+    text-align: left;
+  }
+
+  .adressContact,
+  .social {
+    text-align: left;
+  }
+
+  .socialIcons {
+    justify-content: left;
+    margin-top: 2rem;
+    width: 100%;
+  }
+
+  .footerDescription {
+    align-items: center;
+    margin-top: 5rem;
+  }
+  .logoRodape img {
+    margin: 0;
+    margin-bottom: 3rem;
+  }
+
+  .nextContent p {
+    text-align: left;
+    width: 100%;
+  }
+}

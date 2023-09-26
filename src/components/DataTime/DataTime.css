@@ -1,0 +1,37 @@
+.containerSaudation {
+  position: absolute;
+  width: max-content;
+  padding: 1rem;
+  border-radius: 1rem;
+  left: -10px;
+  top: -50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.containerSaudation h2 {
+  text-align: left !important;
+}
+.containerSaudation p {
+  color: #fff !important;
+  font-size: 1.6rem;
+  width: 100%;
+}
+
+.containerSaudation .timeSaudation {
+  font-style: italic;
+  text-align: center;
+  width: max-content;
+}
+
+@media (max-width: 1070px) {
+  .containerSaudation p {
+    font-size: 1.8rem;
+    margin: 3px 0;
+  }
+
+  .containerSaudation {
+    top: -50px;
+  }
+}

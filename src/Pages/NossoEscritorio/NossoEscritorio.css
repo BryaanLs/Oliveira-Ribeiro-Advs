@@ -1,0 +1,133 @@
+.ourOffice {
+  background-image: url(/src/assets/img/carrossel1.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 1;
+}
+
+.ourOffice::before {
+  content: "";
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: var(--corPrimariaBlur);
+  backdrop-filter: saturate(200%) brightness(60%);
+  -webkit-backdrop-filter: saturate(200%) brightness(60%);
+  position: absolute;
+  z-index: -1;
+}
+
+.twoPics {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.twoPics img {
+  border-radius: 2rem;
+}
+
+.reverseMaps {
+  flex-direction: row-reverse;
+}
+
+.subtitleMaps {
+  position: relative;
+  top: -30px;
+}
+.reverseMaps h2,
+.reverseMaps h3,
+.reverseMaps p > span {
+  color: var(--corPrimaria);
+}
+
+.reverseMaps p,
+.reverseMaps p > a {
+  color: var(--cinzaLetras);
+}
+
+.reverseMaps h3 {
+  font-size: 2.3rem;
+}
+
+.reverseMaps p > a {
+  font-weight: bold;
+}
+
+.reverseMaps .contactButton {
+  text-decoration: none;
+  position: relative;
+  bottom: -30px;
+}
+
+.atuacoes {
+  width: 100%;
+}
+
+.atuacoes ul li {
+  margin-top: 2rem;
+  font-size: 2rem;
+  padding-left: 3rem;
+  color: var(--corPrimaria);
+  position: relative;
+}
+
+.atuacoes ul li::before {
+  content: url(/src/assets/img/check_box.svg);
+  position: absolute;
+  left: 0;
+  top: 2px;
+}
+
+.reversePic a {
+  font-weight: bold;
+  color: var(--corPrimariaSegundoTom);
+  text-decoration: underline;
+  transition: color 0.3s ease-in-out;
+}
+.reversePic a:hover {
+  color: var(--corPrimariaTerceiroTom);
+}
+
+@media (max-width: 1070px) {
+  .reversePic a {
+    margin-top: 4rem;
+    width: 100%;
+  }
+  .twoPics {
+    flex-direction: column;
+  }
+
+  .reverseMaps {
+    flex-direction: column;
+  }
+
+  .ourOffice {
+    background-attachment: scroll;
+    background-position: 50%;
+  }
+
+  .reverseMaps iframe {
+    margin-top: 10rem;
+  }
+
+  .reverseMaps h3 {
+    text-align: center;
+  }
+
+  .twoPics img {
+    width: 80%;
+    height: auto;
+  }
+}
+
+@media (max-width: 735px) {
+  .twoPics img {
+    width: 100%;
+    height: auto;
+  }
+}

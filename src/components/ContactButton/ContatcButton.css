@@ -1,0 +1,17 @@
+.contactButton {
+  display: block;
+  width: max-content;
+  color: #fff;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  background-color: var(--corSecundariaTerceiroTom);
+  border-radius: 10px;
+  box-shadow: 0 0 0px #00000073;
+  transition: box-shadow 0.3s, transform 0.3s, filter 0.3s,
+    background 0.3s ease-in-out;
+}
+
+.contactButton:hover {
+  transform: translate(5px, -5px);
+  box-shadow: -10px 10px 5px #00000073;
+}
