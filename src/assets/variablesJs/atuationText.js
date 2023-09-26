@@ -42,8 +42,7 @@ export const text = {
   // civel
   civel: {
     paragraph: [
-      "O Direito de Família é o ramo do Direito Civil que define as normas envolvendo as relações familiares, no que diz respeito à estrutura, organização e proteção da família, regulando e estabelecendo normas de convivência. O conceito de família tem sido alterado no decorrer dos tempos e, atualmente, tem como base os princípios da afetividade e dignidade do ser humano.",
-      "Essas são as principais causas que englobam o Direito Familiar:",
+      "O Direito Civil, também conhecido como Direito Cível, é uma das principais áreas do Direito no Brasil e engloba um amplo conjunto de normas e princípios que regulam as relações jurídicas entre pessoas físicas e jurídicas, abordando aspectos fundamentais da vida em sociedade. É uma das áreas mais abrangentes do direito, e suas relações englobam diversos aspectos do nosso dia a dia.  ",
     ],
     listLeft: [
       "Separação e Divórcio",

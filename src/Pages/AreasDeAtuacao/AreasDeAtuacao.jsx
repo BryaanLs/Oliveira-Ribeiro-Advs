@@ -57,7 +57,7 @@ const AreasDeAtuacao = () => {
           animationImg={fromRightVariant}
           span="Cível"
           title="Direito Cível"
-          paragraphs={text.imobiliario.paragraph}
+          paragraphs={text.civel.paragraph}
           mainClass="jobDescription listTextConfig"
         >
           <ListText
