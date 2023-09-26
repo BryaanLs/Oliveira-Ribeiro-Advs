@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import React from "react";
+import { useEffect } from "react";
 import "./MapsSession.css";
 
 const MapsSession = ({
@@ -11,6 +12,25 @@ const MapsSession = ({
   imgCelular,
   imgEmail,
 }) => {
+  useEffect(() => {
+    const iframeElement = document.querySelector("iframe"); // Selecione o seu iframe da maneira apropriada
+
+    const loadIframe = () => {
+      // Função para carregar o iframe
+      iframeElement.src =
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.6476458175603!2d-46.67292752552027!3d-23.581095162315908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59e0290c9a7b%3A0x3d8964161ab4e1cc!2sOliveira%20Ribeiro%20Advogados!5e0!3m2!1spt-BR!2sbr!4v1693111771926!5m2!1spt-BR!2sbr";
+    };
+
+    // Adicionar um ouvinte de evento para carregar o iframe após o carregamento da página
+    window.addEventListener("load", loadIframe);
+
+    // Remover o ouvinte de evento quando o componente for desmontado
+    return () => {
+      window.removeEventListener("load", loadIframe);
+    };
+  }, []);
+
+  //caso de errado, remover até aqui
   return (
     <>
       <div className={`maps-content main-content ${addClass}`}>
