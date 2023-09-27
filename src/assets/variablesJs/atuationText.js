@@ -9,12 +9,10 @@ export const text = {
     listLeft: [
       "Direito Societário",
       "Contratos Empresariais",
-      "Direito Cambiário",
       "Recuperação de Empresas e Falências",
     ],
     listRight: [
-      "Propriedade Intelectual e Industrial",
-      "Comércio Internacional e Direito Aduaneiro",
+      "Propriedade Industrial",
       "Propriedade e Locação Comercial",
       "Responsabilidade Civil Empresarial",
     ],
@@ -47,14 +45,13 @@ export const text = {
     listLeft: [
       "Separação e Divórcio",
       "Guarda e Regulamentação de Visitas",
-      "Pensão Alimentícia para Filhos",
-      "Pensão alimentícia para Esposas",
+      "Pensão Alimentícia",
+      "Adoção",
     ],
     listRight: [
       "Revisão de Pensão",
       "Investigação de Paternidade",
       "Testamento e Inventários",
-      "Adoção",
     ],
   },
 };
