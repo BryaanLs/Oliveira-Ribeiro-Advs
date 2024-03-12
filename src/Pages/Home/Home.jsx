@@ -171,9 +171,9 @@ const Home = () => {
           <div className="aboutMe-text">
             <h2>Dr. Gabriel Oliveira Ribeiro</h2>
             <p>
-              Graduado em Direito pela Universidade de São Paulo, o Dr. Gabriel
-              atual na áreas do Direito Civil, Familiar e Empresarial e
-              Empresarial há mais de 6 anos.
+              Graduado em Direito pela FAAP - Fundação Armando Alvares Penteado,
+              o Dr. Gabriel atual na áreas do Direito Civil, Familiar e
+              Empresarial e Empresarial há mais de 6 anos.
             </p>
           </div>
 
