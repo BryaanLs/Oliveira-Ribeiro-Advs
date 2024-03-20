@@ -27,4 +27,3 @@ Caso deseje executar o projeto localmente, siga estas etapas:
 
 UI|UX Design: <b>Eduardo Felipe Scrock</b><br>
 Desenvolvimento: <b>Bryan Soares</b>
-
