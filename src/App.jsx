@@ -20,9 +20,9 @@ const App = () => {
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="Áreas-de-atuação" element={<AreasDeAtuacao />} />
-          <Route path="Nosso-Escritório" element={<NossoEscritorio />} />
-          <Route path="Advogados" element={<Advogados />} />
+          <Route path="atuacao" element={<AreasDeAtuacao />} />
+          <Route path="escritorio" element={<NossoEscritorio />} />
+          <Route path="advogados" element={<Advogados />} />
         </Routes>
         <Footer />
         <WhatsappButton boxWhats={boxWhats} setBoxWhats={setBoxWhats} />

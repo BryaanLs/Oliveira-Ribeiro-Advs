@@ -82,7 +82,7 @@ const NossoEscritorio = () => {
               <li>Direito Imobiliário</li>
             </ul>
           </div>
-          <NavLink to="/Áreas-de-atuação">Ir para Áreas de Atuação</NavLink>
+          <NavLink to="/atuacao">Ir para Áreas de Atuação</NavLink>
         </ContainerPicture>
       </Container>
     </>

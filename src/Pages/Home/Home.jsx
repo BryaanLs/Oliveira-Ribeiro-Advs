@@ -177,9 +177,7 @@ const Home = () => {
             </p>
           </div>
 
-          <NavLink to="Nosso-Escritório">
-            Veja mais sobre nosso escritório
-          </NavLink>
+          <NavLink to="escritorio">Veja mais sobre nosso escritório</NavLink>
         </div>
       </Container>
     </>

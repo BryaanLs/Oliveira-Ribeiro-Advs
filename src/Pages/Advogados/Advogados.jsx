@@ -1,5 +1,5 @@
 import React from "react";
-import "./Socios.css";
+import "./Advogados.css";
 import Container from "../../components/Container/Container";
 import ContainerPicture from "../../components/ContainerPicture/ContainerPicture";
 import drgabrielbigscale from "../../assets/img/drgabrielbigscale.webp";

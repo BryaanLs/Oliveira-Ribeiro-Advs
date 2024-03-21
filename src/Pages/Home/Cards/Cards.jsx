@@ -29,7 +29,7 @@ const Cards = ({ animationText }) => {
           <img src={livroSVG} alt="icone de um livro" width="50" height="50" />
           <h2>Dr. Gabriel Oliveira Ribeiro</h2>
           <p>OAB n° 449575/SP</p>
-          <NavLink to="Nosso-escritório">Conheça mais</NavLink>
+          <NavLink to="escritorio">Conheça mais</NavLink>
         </div>
 
         <div className="card">

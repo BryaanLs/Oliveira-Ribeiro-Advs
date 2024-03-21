@@ -23,13 +23,13 @@ const Menu = ({ handleClickMenu }) => {
           <NavLink to="/" onClick={handleClickMenu} end>
             Página Inicial
           </NavLink>
-          <NavLink to="Áreas-de-atuação" onClick={handleClickMenu}>
+          <NavLink to="atuacao" onClick={handleClickMenu}>
             Áreas de Atuação
           </NavLink>
-          <NavLink to="Nosso-Escritório" onClick={handleClickMenu}>
+          <NavLink to="escritorio" onClick={handleClickMenu}>
             Nosso Escritório
           </NavLink>
-          <NavLink to="Advogados" onClick={handleClickMenu}>
+          <NavLink to="advogados" onClick={handleClickMenu}>
             Advogados
           </NavLink>
         </nav>
