@@ -43,8 +43,8 @@ const Footer = () => {
                 </NavLink>
               </li>
               <li>
-                <NavLink to="Sócios" onClick={scrollToTop}>
-                  Sócios
+                <NavLink to="Advogados" onClick={scrollToTop}>
+                  Advogados
                 </NavLink>
               </li>
             </ul>

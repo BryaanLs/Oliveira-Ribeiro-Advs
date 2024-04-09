@@ -173,7 +173,7 @@ const Home = () => {
             <p>
               Graduado em Direito pela FAAP - Fundação Armando Alvares Penteado,
               o Dr. Gabriel atual na áreas do Direito Civil, Familiar e
-              Empresarial e Empresarial há mais de 6 anos.
+              Empresarial há mais de 6 anos.
             </p>
           </div>
 

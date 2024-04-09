@@ -29,8 +29,8 @@ const Menu = ({ handleClickMenu }) => {
           <NavLink to="Nosso-Escritório" onClick={handleClickMenu}>
             Nosso Escritório
           </NavLink>
-          <NavLink to="Sócios" onClick={handleClickMenu}>
-            Sócios
+          <NavLink to="Advogados" onClick={handleClickMenu}>
+            Advogados
           </NavLink>
         </nav>
         <div className="funcionamento">
