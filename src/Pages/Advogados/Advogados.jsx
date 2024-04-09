@@ -11,7 +11,7 @@ import casinha from "../../assets/img/casinhaIcone.svg";
 import pessoas from "../../assets/img/pessoasIcone.svg";
 import caixa from "../../assets/img/caixaIcone.svg";
 
-const Socios = () => {
+const Advogados = () => {
   return (
     <>
       <div className="container bgHeroSocios ourOffice">
@@ -77,4 +77,4 @@ const Socios = () => {
   );
 };
 
-export default Socios;
+export default Advogados;
