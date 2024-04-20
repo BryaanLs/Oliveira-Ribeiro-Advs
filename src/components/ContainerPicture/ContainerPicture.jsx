@@ -46,3 +46,51 @@ const ContainerPicture = ({
 };
 
 export default ContainerPicture;
+
+// USE EXAMPLE:
+
+{
+  /* <ContainerPicture
+  title="Gabriel Lara de Oliveira Ribeiro"
+  p1="O advogado deve proceder de forma que o torne merecedor de respeito e que contribua para o prestígio da classe e da advocacia."
+  p2="
+          (Estatuto da OAB, art. 31)."
+  srcImg={drgabrielbigscale}
+  animacaoUm={fromLeftVariant}
+  animacaoDois={fromRightVariant}
+  addClass="socios"
+>
+  <ul>
+    <li>
+      <img
+        src={casinha}
+        alt="ícone de casa"
+        width="34px"
+        height="34px"
+        loading="lazy"
+      />
+      Direito Imobiliário
+    </li>
+    <li>
+      <img
+        src={pessoas}
+        alt="ícone de três pessoas juntas"
+        width="34px"
+        height="34px"
+        loading="lazy"
+      />
+      Direito Cível
+    </li>
+    <li>
+      <img
+        src={caixa}
+        alt="íconde de um caixa de dinheiro"
+        width="34px"
+        height="34px"
+        loading="lazy"
+      />
+      Direito Empresarial
+    </li>
+  </ul>
+</ContainerPicture>; */
+}

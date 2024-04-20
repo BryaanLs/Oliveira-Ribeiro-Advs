@@ -1,0 +1,59 @@
+.cv-professional-name {
+  font-size: 3rem;
+}
+
+.cv-professional-name span {
+  font-weight: 400;
+}
+
+.sub-title-h3 {
+  font-size: 2rem;
+  margin: 2rem 0 1rem 0;
+}
+.cv-list-style {
+  flex-wrap: bawrap;
+}
+
+.cv-list-style li {
+  position: relative;
+  margin: 1rem 0 1rem 5rem;
+}
+
+.cv-list-style li::after {
+  content: "•";
+  display: inline-block;
+  position: absolute;
+  left: -2rem;
+  top: 0;
+  transform: scale(150%);
+  color: var(--corDestaque);
+}
+
+.cv-list-style.activity {
+  display: flex;
+}
+
+@media (max-width: 1010px) {
+  .cv-list-style li {
+    margin: 0.5rem 0;
+  }
+
+  .cv-list-style li::after {
+    left: -1.5rem;
+  }
+
+  .cv-professional-name {
+    font-size: 2rem;
+  }
+
+  .cv-professional-name span {
+    display: block;
+    margin-top: 1rem;
+    font-size: 1.4rem;
+  }
+
+  .cv-list-style {
+    display: flex;
+    flex-direction: column;
+  }
+}

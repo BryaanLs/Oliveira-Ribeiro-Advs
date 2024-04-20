@@ -17,7 +17,7 @@
   font-size: 3rem;
 }
 
-.socios ul li {
+/* .socios ul li {
   display: flex;
   align-items: center;
   margin-top: 2rem;
@@ -25,22 +25,47 @@
   color: var(--corPrimariaSegundoTom);
   position: relative;
   padding-left: 5rem;
+  padding: 3rem 0 3rem 5rem;
 }
 
 .socios ul li img {
   border-radius: 0;
   position: absolute;
   left: 0;
+} */
+
+/* descomentar o trecho de codigo acima quando for utilizar o layout de fotos */
+
+/* comentar o trecho de baixo quando nao estiver mais em uso */
+
+.container.socios,
+.socios-reverse {
+  margin-top: 5rem;
+  padding: 5rem 3rem;
 }
+
+.socios-reverse {
+  background-color: var(--corPrimaria);
+  color: #fff;
+}
+
+.socios-reverse li,
+.socios-reverse span {
+  color: #fff;
+}
+
+/* até aqui */
 
 .itaimBibi {
   background-image: url(/src/assets/img/carrossel1.webp);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   height: 70vh;
   position: relative;
   z-index: 1;
+  margin-top: 0;
 }
 
 .itaimBibi::before {
@@ -53,17 +78,29 @@
   backdrop-filter: brightness(40%) saturate(2);
 }
 
+.itaimBibi a {
+  color: #fff;
+  transition: 0.2s ease-in-out;
+}
+
+.itaimBibi a:hover {
+  color: var(--corDestaque);
+}
 .itaimBibi p {
   position: absolute;
   right: 20px;
   bottom: 20px;
-  color: #fff;
   font-weight: bold;
 }
 
 @media (max-width: 1070px) {
   .bgHeroSocios {
     text-align: center;
+  }
+
+  .itaimBibi,
+  .bgHeroSocios {
+    background-attachment: scroll;
   }
 
   .socios {
