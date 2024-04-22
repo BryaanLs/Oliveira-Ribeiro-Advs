@@ -13,26 +13,13 @@ const Cards = ({ animationText }) => {
     <>
       <div className="cards main-content">
         <div className="card">
-          <div className="saudation">
-            <DataTime />
-          </div>
-          <img
-            src={pessoaSVG}
-            alt="icone de uma pessoa e um papel"
-            width="50"
-            height="50"
-          />
-          <h2>Solidariedade, Ética e Lealdade.</h2>
-        </div>
-
-        <div className="card">
           <img src={livroSVG} alt="icone de um livro" width="50" height="50" />
           <h2>Dr. Gabriel Oliveira Ribeiro</h2>
           <p>OAB n° 449575/SP</p>
           <NavLink to="escritorio">Conheça mais</NavLink>
         </div>
 
-        <div className="card">
+        {/* <div className="card">
           <img
             src={marteloSVG}
             alt="icone de um martelo batendo"
@@ -40,7 +27,7 @@ const Cards = ({ animationText }) => {
             height="50"
           />
           <h2>Direito Cível, Direito Empresarial e Direito Imobiliário </h2>
-        </div>
+        </div> */}
       </div>
       <div className="cards-description main-content">
         <BoxAnimation animacao={animationText}>

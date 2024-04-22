@@ -29,6 +29,26 @@ import { text } from "../../assets/variablesJs/homeText";
 const Home = () => {
   return (
     <>
+      <Container containerBg="titleHome">
+        <div className="titleHomeGrid">
+          <h2>
+            Nossa premissa é o
+            <span
+              style={{
+                fontSize: "inherit",
+                textTransform: "uppercase",
+                color: "var(--corDestaque)",
+              }}
+            >
+              &nbsp; atendimento responsável
+            </span>
+            , personalizado e humanizado do início ao fim.
+            <span>
+              Simplificamos a linguagem jurídica, acolhendo seu problema.
+            </span>
+          </h2>
+        </div>
+      </Container>
       <Container containerBg="home">
         <Carrossel />
       </Container>

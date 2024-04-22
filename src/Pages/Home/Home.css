@@ -8,6 +8,35 @@
   display: flex;
   align-items: center;
 }
+.titleHome {
+  z-index: 2;
+  position: absolute;
+  top: 20%;
+}
+
+.titleHome h2 {
+  position: absolute;
+  text-transform: uppercase;
+  z-index: 1;
+  top: 40%;
+  width: 60%;
+  left: 20%;
+  right: 10%;
+  color: #fff;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.titleHome span:nth-child(1) {
+  line-height: 0;
+}
+
+.titleHome span:nth-child(2) {
+  display: block;
+  color: inherit;
+  font-weight: normal;
+  font-style: italic;
+}
 
 .home.container {
   padding: 0;
@@ -154,6 +183,10 @@
     text-align: center;
     padding: 5rem 0;
   }
+
+  /* ! ----------------------------------------------- */
+  /* ! ----------------------------------------------- */
+  /* ! ----------------------------------------------- */
   .aboutMe p,
   .aboutMe h2 {
     text-align: center;
@@ -202,9 +235,34 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 415px) {
   .valores ul {
     display: grid;
     grid-template-columns: 1fr;
+  }
+  .titleHome {
+    top: 30%;
+  }
+  .titleHome h2 {
+    font-size: 2.5rem;
+    text-align: left;
+    width: 90%;
+    left: 5%;
+  }
+}
+@media (max-width: 376px) {
+  .titleHome {
+    top: 30%;
+  }
+  .titleHome h2 {
+    font-size: 2.1rem;
+  }
+  .titleHome span:nth-child(2) {
+    /* background-color: red; */
+    font-size: 1.3rem;
+    display: block;
+    color: inherit;
+    font-weight: normal;
+    font-style: italic;
   }
 }
