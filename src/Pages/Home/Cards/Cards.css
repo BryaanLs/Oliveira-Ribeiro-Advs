@@ -80,6 +80,7 @@
 
 .cards-description {
   display: flex;
+  flex-direction: column;
   gap: 12rem;
   position: relative;
   bottom: 70px;
@@ -88,7 +89,7 @@
 .cards-description p {
   color: var(--cinzaLetras);
   font-family: var(--fonteParagrafo);
-  font-size: 2.3rem;
+  font-size: 2rem;
 }
 
 .cards-description h2 {
@@ -190,9 +191,9 @@
     text-align: center;
   }
 
-  .cards-description h2,
-  .cards-description p {
+  .cards-description h2 {
     text-align: center;
+    font-size: 2.6rem;
   }
 
   .cards-description h2 {
@@ -233,5 +234,12 @@
   .saudation h2 {
     font-size: 2.5rem;
     width: 80vw;
+  }
+}
+
+@media (max-width: 400px) {
+  .cards-description h2 {
+    text-align: center;
+    font-size: 2.3rem;
   }
 }

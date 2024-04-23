@@ -31,12 +31,17 @@ const Cards = ({ animationText }) => {
       </div>
       <div className="cards-description main-content">
         <BoxAnimation animacao={animationText}>
-          <h2>Confira as áreas de atuação do nosso escritório</h2>
+          <h2>Qual é o nosso objetivo?</h2>
         </BoxAnimation>
 
         <BoxAnimation animacao={animationText}>
           <p>
-            6 anos de experiência em Direito Cível, Empresarial e Imobiliario.
+            Buscamos uma parceria entre nós, advogados e você, cliente, com o
+            objetivo de criar um elo próximo, seguro e confiável durante todo o
+            acompanhamento jurídico do seu caso. Simplificamos a linguagem
+            jurídica tornando mais acessível ao seu entendimento, quebramos as
+            barreiras das formalidades para de fato, personalizar o atendimento
+            que você procura na resolução do seu problema.
           </p>
         </BoxAnimation>
       </div>
