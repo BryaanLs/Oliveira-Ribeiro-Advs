@@ -10,24 +10,6 @@ import escritorioTres from "../../assets/img/carrossel3.webp";
 const Carrossel = () => {
   return (
     <div className="containerSwiper">
-      {/* <h2
-        style={{
-          position: "absolute",
-          zIndex: 1000,
-          width: "80%",
-          textAlign: "center",
-          color: "#fff",
-          top: "40%",
-          left: "10%",
-        }}
-      >
-        Nossa premissa é o
-        <span style={{ fontSize: "inherit", color: "var(--corDestaque)" }}>
-          atendimento responsável
-        </span>
-        , personalizado e humanizado do início ao fim. Simplificamos a linguagem
-        jurídica, acolhendo seu problema.
-      </h2> */}
       <Swiper
         modules={[Autoplay, EffectFade, Pagination, Navigation]}
         autoplay={{ delay: 5000 }}

@@ -30,24 +30,17 @@ const Home = () => {
   return (
     <>
       <Container containerBg="titleHome">
-        <div className="titleHomeGrid">
-          <h2>
-            Nossa premissa é o
-            <span
-              style={{
-                fontSize: "inherit",
-                textTransform: "uppercase",
-                color: "var(--corDestaque)",
-              }}
-            >
-              &nbsp; atendimento responsável
-            </span>
-            , personalizado e humanizado do início ao fim.
-            <span>
-              Simplificamos a linguagem jurídica, acolhendo seu problema.
-            </span>
-          </h2>
-        </div>
+        <h2>
+          Nossa premissa é o&nbsp;
+          <span className="subTitleDestaque">atendimento responsável,</span>
+          personalizado e humanizado do início ao fim.&nbsp;
+          <span className="subTitleDestaque">Simplificamos </span> a linguagem
+          jurídica, acolhendo seu problema.
+          <span className="subTitleDescription">
+            É você, conhecendo de verdade a prática jurídica do seu próprio
+            caso, acompanhado sempre por nós!
+          </span>
+        </h2>
       </Container>
       <Container containerBg="home">
         <Carrossel />
