@@ -37,10 +37,10 @@ export const text = {
       "Registro de Imóveis",
     ],
   },
-  // civel
-  civel: {
+  // Civil
+  Civil: {
     paragraph: [
-      "O Direito Civil, também conhecido como Direito Cível, é uma das principais áreas do Direito no Brasil e engloba um amplo conjunto de normas e princípios que regulam as relações jurídicas entre pessoas físicas e jurídicas, abordando aspectos fundamentais da vida em sociedade. É uma das áreas mais abrangentes do direito, e suas relações englobam diversos aspectos do nosso dia a dia.  ",
+      "O Direito Civil, também conhecido como Direito Civil, é uma das principais áreas do Direito no Brasil e engloba um amplo conjunto de normas e princípios que regulam as relações jurídicas entre pessoas físicas e jurídicas, abordando aspectos fundamentais da vida em sociedade. É uma das áreas mais abrangentes do direito, e suas relações englobam diversos aspectos do nosso dia a dia.  ",
     ],
     listLeft: [
       "Separação e Divórcio",

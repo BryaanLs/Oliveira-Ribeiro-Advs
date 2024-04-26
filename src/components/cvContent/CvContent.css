@@ -11,7 +11,7 @@
   margin: 2rem 0 1rem 0;
 }
 .cv-list-style {
-  flex-wrap: bawrap;
+  flex-wrap: wrap;
 }
 
 .cv-list-style li {

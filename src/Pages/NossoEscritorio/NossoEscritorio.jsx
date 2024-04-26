@@ -52,6 +52,64 @@ const NossoEscritorio = () => {
         <img src={officeRight} width="678" height="494" alt="" />
       </Container>
 
+      <Container containerBg="bgHistory">
+        <div className="history-content main-content">
+          <BoxAnimation animacao={fromBottomVariant}>
+            <h2>OLIVEIRA RIBEIRO ADVOGADOS ASSOCIADOS</h2>
+          </BoxAnimation>
+
+          <BoxAnimation animacao={fromBottomVariant}>
+            <p>
+              Foi fundada na Capital de São Paulo, aos 05/10/1979, e registrada
+              na Ordem dos Advogados do Brasil, sob o nº 420-SP, tendo sido
+              sucessora de Oliveira Ribeiro Conselheiros, que figurava na cidade
+              de São Paulo, nos idos dos anos de 1841, com Domingos José Freitas
+              Barreto de Oliveira Ribeiro, militando na área Civil e Criminal.
+              Teve entre seus descendentes Dr. Nelson de Oliveira Ribeiro e Dr.
+              Achilles de Oliveira Ribeiro que na carreira jurídica se tornou
+              Desembargador. Destacaram-se na área Civil, Criminal e
+              Internacional.
+            </p>
+          </BoxAnimation>
+          <BoxAnimation animacao={fromBottomVariant}>
+            <p>
+              Atualmente, o escritório Oliveira Ribeiro ADVS permanece mantendo
+              o padrão de excelência nos serviços jurídicos, com uma nova equipe
+              de advogados que tomam a frente em uma gestão alinhada com as
+              necessidades dos seus clientes e dentro das seguintes áreas,
+              Civil, Imobiliário, Previdenciário, Consumidor, Bancário e
+              Empresarial.
+            </p>
+          </BoxAnimation>
+          <BoxAnimation animacao={fromBottomVariant}>
+            <ul>
+              <li>Assessoria jurídica de imóveis;</li>
+              <li>Planejamento previdenciário;</li>
+              <li>
+                Regularização imobiliária urbana e rural (Regularização
+                fundiária);
+              </li>
+              <li>Inventário Judicial e Extrajudicial;</li>
+              <li>Família;</li>
+              <li>Usucapião Judicial e Extrajudicial;</li>
+              <li>
+                Direito Empresarial (elaboração de atas, contratos e acordos -
+                auxílio em demandas judiciais societárias);
+              </li>
+              <li>
+                Contratos (elaboração de contratos imobiliários - locação,
+                compra e venda, acordos imobiliários e incorporações);
+              </li>
+              <li>
+                Defesa ao consumidor (negativa de plano de saúde -
+                atraso/cancelamento de voo - bancários);
+              </li>
+              <li>Ações Possessórias;</li>
+            </ul>
+          </BoxAnimation>
+        </div>
+      </Container>
+
       <Container>
         <ContainerPicture
           title="Ética, transparência e respeito."
@@ -77,7 +135,7 @@ const NossoEscritorio = () => {
         >
           <div className="atuacoes">
             <ul>
-              <li>Direito Cível</li>
+              <li>Direito Civil</li>
               <li>Direto Empresarial</li>
               <li>Direito Imobiliário</li>
             </ul>

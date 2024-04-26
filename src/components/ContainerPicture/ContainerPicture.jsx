@@ -79,7 +79,7 @@ export default ContainerPicture;
         height="34px"
         loading="lazy"
       />
-      Direito Cível
+      Direito Civil
     </li>
     <li>
       <img

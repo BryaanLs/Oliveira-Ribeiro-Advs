@@ -55,14 +55,14 @@ const AreasDeAtuacao = () => {
         <JobDescription
           animationText={fromLeftVariant}
           animationImg={fromRightVariant}
-          span="Cível"
-          title="Direito Cível"
-          paragraphs={text.civel.paragraph}
+          span="Civil"
+          title="Direito Civil"
+          paragraphs={text.Civil.paragraph}
           mainClass="jobDescription listTextConfig"
         >
           <ListText
-            listLeft={text.civel.listLeft}
-            listRight={text.civel.listRight}
+            listLeft={text.Civil.listLeft}
+            listRight={text.Civil.listRight}
           />
           <ContatcButton
             textButton={"Agendar um horário"}

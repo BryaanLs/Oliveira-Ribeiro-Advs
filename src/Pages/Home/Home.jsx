@@ -1,7 +1,7 @@
 import React from "react";
 import "./Home.css";
 import Carrossel from "../../components/Carrossel/Carrossel";
-import Cards from "./Cards/Cards";
+import Cards from "../../components/Cards/Cards";
 import JobDescription from "../../components/JobDescription/JobDescription";
 import DCivil from "/src/assets/img/Dcivil.webp";
 import Dempresarial from "/src/assets/img/Dempresarial.webp";

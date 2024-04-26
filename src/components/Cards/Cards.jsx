@@ -3,8 +3,8 @@ import "./Cards.css";
 import livroSVG from "/src/assets/img/livro.svg";
 import marteloSVG from "/src/assets/img/martelinho.svg";
 import pessoaSVG from "/src/assets/img/pessoaEPapel.svg";
-import BoxAnimation from "../../../components/BoxAnimation/BoxAnimation";
-import DataTime from "../../../components/DataTime/DataTime";
+import BoxAnimation from "../BoxAnimation/BoxAnimation";
+import DataTime from "../DataTime/DataTime";
 import { NavLink } from "react-router-dom";
 
 // eslint-disable-next-line react/prop-types
@@ -13,9 +13,14 @@ const Cards = ({ animationText }) => {
     <>
       <div className="cards main-content">
         <div className="card">
-          <img src={livroSVG} alt="icone de um livro" width="50" height="50" />
-          <h2>Dr. Gabriel Oliveira Ribeiro</h2>
-          <p>OAB n° 449575/SP</p>
+          <img
+            src={marteloSVG}
+            alt="icone de um livro"
+            width="50"
+            height="50"
+          />
+          <h2>Direito Civil, Direito Empresarial e Direito Imobiliário</h2>
+          {/* <p>Direito Cível, Direito Empresarial e Direito Imobiliário</p> */}
           <NavLink to="escritorio">Conheça mais</NavLink>
         </div>
 

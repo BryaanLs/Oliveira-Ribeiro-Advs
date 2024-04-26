@@ -31,6 +31,53 @@
   border-radius: 2rem;
 }
 
+.bgHistory {
+  background-image: url(/src/assets/img/bg-secondSession.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  margin: 0 !important;
+  position: relative;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+.history-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+  position: relative;
+  padding: 5rem 0;
+}
+
+.history-content p {
+  color: var(--cinzaLetras);
+  font-family: var(--fonteParagrafo);
+  font-size: 2rem;
+}
+
+.history-content h2 {
+  border-left: 8px solid var(--corDestaque);
+  padding-left: 3rem;
+}
+
+.history-content li {
+  position: relative;
+  margin: 0.6rem 0 0.6rem 2rem;
+  color: var(--cinzaLetras);
+  font-size: 2rem;
+}
+
+.history-content li::after {
+  content: "•";
+  display: inline-block;
+  position: absolute;
+  left: -2rem;
+  top: 0;
+  transform: scale(150%);
+  color: var(--corDestaque);
+}
+
 .reverseMaps {
   flex-direction: row-reverse;
 }

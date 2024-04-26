@@ -43,18 +43,11 @@
   justify-content: center;
   flex-direction: column;
   width: 100%;
-  position: relative;
-}
-
-.card:nth-child(1),
-.card:nth-child(3) {
+  transition: opacity 0.5s, transform 0.5s;
+  animation: card-animation 1s ease-in-out forwards;
   height: 270px;
   position: relative;
   top: 30px;
-}
-
-.card:nth-child(2) {
-  height: 350px;
 }
 
 .card img {
@@ -64,18 +57,9 @@
   top: -20px;
 }
 
-.card:nth-child(2) img {
-  position: relative;
-  top: -80px;
-}
-
-.card:nth-child(2) a {
-  position: absolute;
-  bottom: 30px;
-  font-weight: bold;
+.card a {
+  margin-top: 1rem;
   text-decoration: underline;
-  font-size: 1.8rem;
-  color: var(--corPrimariaSegundoTom);
 }
 
 .cards-description {
@@ -95,13 +79,6 @@
 .cards-description h2 {
   border-left: 8px solid var(--corDestaque);
   padding-left: 3rem;
-}
-
-.card {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.5s, transform 0.5s;
-  animation: card-animation 1s ease-in-out forwards;
 }
 
 .saudation {

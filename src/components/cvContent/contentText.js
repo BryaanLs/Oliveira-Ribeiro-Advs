@@ -35,7 +35,7 @@ const texts = [
       span: "(OAB/SP 461.237)",
       profile: [
         "Advogada pela Fundação Armando Alvares Penteado de São Paulo/SP",
-        "Pós-graduada em Cível pela Escola Superior de Advocacia e Fundação Ministério Público (ESA/FMP). Pós-graduada em Comunicação com o Mercado pela Escola Superior de Propaganda e Marketing (ESPM)",
+        "Pós-graduada em Civil pela Escola Superior de Advocacia e Fundação Ministério Público (ESA/FMP). Pós-graduada em Comunicação com o Mercado pela Escola Superior de Propaganda e Marketing (ESPM)",
         "Cursos de extensão em Regularização de Imóveis Urbanos e Rurais pela Ava Educação/Marcel Rulli. Inventário Judicial e Extrajudicial por Maria Júlia Cardoso. Direito Administrativo e Nova Lei de Licitações por Licínia Rossi. Conciliação e Mediação pela Escola Paulista de Magistratura (EPM)",
         "Legal intern na multinacional Thomson Reuters, no Ministério Público Estadual e no escritório Nelson Wilians & Advogados Associados",
         "Advogada com forte atuação em ações declaratórias de Usucapião, Ações Possessórias / Direito Real, Direito Imobiliário e Regularização Imobiliária. Prática na elaboração de peças diversas e teses defensivas em primeiro e segundo grau. Pesquisas extrajudiciais, administrativas e cartorárias em torno de imóveis, lotes, plantas, IPTU. Experiência em atendimento ao cliente, negociação, mediação e conciliação.",
@@ -59,7 +59,10 @@ const texts = [
         "Cursos de extensão em sucessões e estratégias tributárias e Imobiliário pela FGV/SP e em Direito Previdenciário, Trabalhista, Família pela Escola Superior de Advocacia e pela Escola Paulista de Direito",
         "Atuou na área jurídica há 29 anos, sendo 13 anos em escritório de advocacia, 10 anos na empresa VASP, do segmento de concessão de transporte aéreo de passageiros e cargas, 04 anos na empresa Actua Assessoria Ltda, centro de serviço compartilhado do Grupo CCR, do segmento de concessão de rodovias internacionais, federais, estaduais e metrô, 01 ano na empresa BRVias S.A., do segmento de concessão de rodovia federal e estadual.",
       ],
-      activity: ["EM ABERTO"],
+      activity: [
+        "Assessoria jurídica de imóveis, com o planejando e redução de riscos, bem como na regularização de sua documentação judicial ou extrajudicialmente.",
+        "Planejamento previdenciário, assessorando segurados no requerimento de benefícios de aposentadorias e pensões, incluindo a revisão. ",
+      ],
     },
   },
 ];
