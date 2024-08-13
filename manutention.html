@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manutenção | Em Breve Voltaremos</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Rubik:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    />
+    <style>
+      :root {
+        --corPrimaria: #0f1f2f;
+        --corPrimariaSegundoTom: #0b254b;
+        --corPrimariaTerceiroTom: #1e3956;
+        --corPrimariaBlur: #111a2263;
+        --corSecundaria: #cf9031;
+        --corSecundariaSegundoTom: #caa25d;
+        --corSecundariaTerceiroTom: #905b00;
+        --corDestaque: #ffc226;
+        --cinzaPadrao: #cecec2;
+        --fonteTitulo: "Rubik", sans-serif;
+        --fonteParagrafo: "Poppins", sans-serif;
+        --paddingSection: 3rem;
+        --borderRadius: 10px;
+        --cinzaLetras: #9d9d9d;
+        --cinzaBg: #f9f9f9;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: var(--fonteParagrafo);
+        background-color: var(--corPrimariaSegundoTom);
+        color: var(--cinzaLetras);
+        display: flex;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+        padding: 0 1rem;
+      }
+
+      .container {
+        background: var(--cinzaBg);
+        padding: var(--paddingSection);
+        border-radius: var(--borderRadius);
+        box-shadow: 0 4px 10px var(--corPrimariaBlur);
+        max-width: 80%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+
+      h1 {
+        font-family: var(--fonteTitulo);
+        color: var(--corPrimaria);
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+      }
+
+      dotlottie-player {
+        margin-bottom: 3rem;
+        width: 300px;
+        height: 300px;
+      }
+
+      .button {
+        background-color: var(--corDestaque);
+        color: var(--corPrimaria);
+        padding: 1rem 2rem;
+        text-decoration: none;
+        font-size: 1.2rem;
+        border-radius: var(--borderRadius);
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+      }
+
+      .button:hover {
+        background-color: var(--corSecundaria);
+      }
+
+      /* Responsividade para Tablets */
+      @media (max-width: 768px) {
+        .container {
+          max-width: 100%;
+          padding: 1rem;
+        }
+        h1 {
+          font-size: 2rem;
+        }
+
+        p {
+          font-size: 1rem;
+          margin-bottom: 1.5rem;
+        }
+
+        dotlottie-player {
+          width: 250px;
+          height: 250px;
+          margin-bottom: 2rem;
+        }
+
+        .button {
+          font-size: 1rem;
+          padding: 0.8rem 1.5rem;
+        }
+      }
+
+      /* Responsividade para Smartphones */
+      @media (max-width: 480px) {
+        h1 {
+          font-size: 1.8rem;
+        }
+
+        p {
+          font-size: 0.9rem;
+          margin-bottom: 1.5rem;
+        }
+
+        dotlottie-player {
+          width: 200px;
+          height: 200px;
+          margin-bottom: 1.5rem;
+        }
+
+        .button {
+          font-size: 0.9rem;
+          padding: 0.7rem 1.2rem;
+        }
+      }
+      @media (max-width: 340px) {
+        h1 {
+          font-size: 1.8rem;
+        }
+
+        p {
+          font-size: 0.9rem;
+          margin-bottom: 1.5rem;
+        }
+
+        dotlottie-player {
+          width: 200px;
+          height: 200px;
+          margin-bottom: 1.5rem;
+        }
+
+        .button {
+          font-size: 0.9rem;
+          padding: 0.7rem 1.2rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <dotlottie-player
+        src="https://lottie.host/fd484ddd-fc28-475e-a6df-bd6256c112fe/OseYIgWPMP.json"
+        background="transparent"
+        speed="1"
+        loop
+        autoplay
+      ></dotlottie-player>
+      <h1>Estamos em Manutenção</h1>
+      <p>
+        Nosso site está temporariamente fora do ar para melhorias. Agradecemos
+        pela sua paciência e voltaremos em breve.
+      </p>
+      <a
+        href="https://wa.me/5511975950351?text=Olá,%20gostaria%20de%20tirar%20algumas%20dúvidas!"
+        class="button"
+        >Entre em Contato pelo WhatsApp</a
+      >
+    </div>
+
+    <script
+      src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+      type="module"
+    ></script>
+  </body>
+</html>
